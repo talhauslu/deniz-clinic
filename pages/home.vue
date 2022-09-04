@@ -15,7 +15,7 @@
         <video class="hidden sm:block absolute right-0 object-cover w-1/2 h-full object-center -z-10 border border-white" autoplay muted loop id="myVideo">
             <source src="~/assets/media/entrance_video.mp4" type="video/mp4">
         </video>
-        <img class="block sm:hidden absolute object-cover w-full h-full object-center 500:object-left" 
-        src="~/assets/media/smiling_girl.jpg"/>
+        <nuxt-img class="block sm:hidden absolute object-cover w-full h-full object-center 500:object-left" 
+        src="/smiling_girl.jpg"/>
     </div>
 </template>
