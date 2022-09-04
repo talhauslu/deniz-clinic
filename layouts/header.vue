@@ -31,10 +31,10 @@
             </div>
             <div class="flex flex-row w-full justify-between px-6 py-2 bg-opacity-60 items-center bg-indigo-50">
 
-                <img src="~/assets/media/logo-removebg-preview.png" class="object-contain h-20"/>
+                <img src="~/assets/media/logo-removebg-preview.png" class="object-contain h-auto w-2/3 400:h-20"/>
 
-                <div class="flex flex-row items-center gap-8">
-                    <nav class="flex flex-row gap-8 font-bold uppercase text-gray-600 text-sm flex-wrap">
+                <div class="hidden sm:flex flex-row w-full 1120:w-auto justify-around items-center gap-8">
+                    <nav class="flex flex-col 1120:flex-row gap-8 font-bold uppercase text-gray-600 text-sm flex-wrap">
                         <NuxtLink to="/home">ANA SAYFA</NuxtLink>
 
                         <div class="relative group">
@@ -62,6 +62,7 @@
                         Randevu Al
                     </button>
                 </div>
+                    <i class="fa-solid fa-bars block sm:hidden text-3xl"></i>
             </div>
         </div>
 
