@@ -1,6 +1,6 @@
 <template>
     <footer class="text-gray-700">
-        <div class="py-8 flex flex-row justify-around w-full flex-wrap">
+        <div class="py-8 flex flex-col 500:flex-row gap-8 500:gap-0 justify-around w-full flex-wrap">
             <div class="flex flex-col gap-6 px-4">
                 <h1 class="text-2xl font-bold">Contact</h1>
                 <div class="bg-gray-700 h-px w-full"></div>
