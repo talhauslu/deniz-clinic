@@ -35,10 +35,10 @@
 
                 <div class="flex flex-row items-center gap-8">
                     <nav class="flex flex-row gap-8 font-bold uppercase text-gray-600 text-sm">
-                        <NuxtLink to="/slm">ANA SAYFA</NuxtLink>
+                        <NuxtLink to="/home">ANA SAYFA</NuxtLink>
 
                         <div class="relative group">
-                            <NuxtLink class=" relative flex flex-row align-center gap-2" to="/slm">
+                            <NuxtLink class=" relative flex flex-row align-center gap-2" to="/home">
                                 <span>HİZMETLERİMİZ</span>
                                 <i class="fa-solid fa-sort-down"></i>
                             </NuxtLink>
@@ -51,10 +51,10 @@
                             </div>
                         </div>
 
-                        <NuxtLink to="/slm">HAKKIMIZDA</NuxtLink>
-                        <NuxtLink to="/slm">BLOG</NuxtLink>
-                        <NuxtLink to="/slm">MEDYA</NuxtLink>
-                        <NuxtLink to="/slm">İLETİŞİM</NuxtLink>
+                        <NuxtLink to="/home">HAKKIMIZDA</NuxtLink>
+                        <NuxtLink to="/home">BLOG</NuxtLink>
+                        <NuxtLink to="/home">MEDYA</NuxtLink>
+                        <NuxtLink to="/home">İLETİŞİM</NuxtLink>
                     </nav>
 
                     <button
