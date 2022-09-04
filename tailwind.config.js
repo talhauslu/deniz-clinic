@@ -25,6 +25,9 @@ module.exports = {
         "80vh":"80vh",
         "90vh":"90vh",
       },
+      screens:{
+        "1120":"1120px"
+      }
     },
   },
   variants:{

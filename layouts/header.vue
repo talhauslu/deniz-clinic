@@ -34,7 +34,7 @@
                 <img src="~/assets/media/logo-removebg-preview.png" class="object-contain h-20"/>
 
                 <div class="flex flex-row items-center gap-8">
-                    <nav class="flex flex-row gap-8 font-bold uppercase text-gray-600 text-sm">
+                    <nav class="flex flex-row gap-8 font-bold uppercase text-gray-600 text-sm flex-wrap">
                         <NuxtLink to="/home">ANA SAYFA</NuxtLink>
 
                         <div class="relative group">
