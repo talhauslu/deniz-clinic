@@ -31,7 +31,7 @@
             </div>
             <div class="flex flex-row w-full justify-between px-6 py-2 bg-opacity-60 items-center bg-indigo-50">
 
-                <nuxt-img src="/logo-removebg-preview.png" class="object-contain h-20"></nuxt-img>
+                <img src="~/assets/media/logo-removebg-preview.png" class="object-contain h-20"/>
 
                 <div class="flex flex-row items-center gap-8">
                     <nav class="flex flex-row gap-8 font-bold uppercase text-gray-600 text-sm">

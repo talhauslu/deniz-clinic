@@ -13,7 +13,7 @@
             </button>
         </div>
         <video class="absolute right-0 object-cover w-1/2 h-full object-center" autoplay muted loop id="myVideo">
-            <source src="/entrance_video.mp4" type="video/mp4">
+            <source src="~/assets/media/entrance_video.mp4" type="video/mp4">
         </video>
     </div>
 </template>
