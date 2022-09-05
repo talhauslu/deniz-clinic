@@ -14,11 +14,11 @@
             </button>
         </div>
         <video
-            class="hidden sm:block absolute right-0 object-cover w-1/2 h-full object-center -z-10 border border-white"
+            class="hidden lg:block absolute right-0 object-cover w-1/2 h-full object-center -z-10 border border-white"
             autoplay muted loop id="myVideo">
             <source src="~/assets/media/entrance_video.mp4" type="video/mp4">
         </video>
-        <div class="w-full h-full block sm:hidden absolute bg-black">
+        <div class="w-full h-full block lg:hidden absolute bg-black">
             <nuxt-img class="object-cover w-full h-full object-center 500:object-left opacity-80"
                 src="/smiling_girl.jpg" />
         </div>
