@@ -22,6 +22,11 @@ export default {
         crossorigin: "anonymous",
         referrerpolicy: "no-referrer"
       }
+    ],
+    script:[
+      {
+        src:"https://unpkg.com/vue-typer/dist/vue-typer.min.js"
+      }
     ]
   },
   meta: {

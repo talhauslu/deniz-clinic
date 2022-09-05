@@ -2,7 +2,7 @@
     <footer class="text-gray-700">
         <div class="py-8 flex flex-col 500:flex-row gap-8 500:gap-0 justify-around w-full flex-wrap">
             <div class="flex flex-col gap-6 px-4">
-                <h1 class="text-2xl font-bold">İletişm</h1>
+                <h1 class="text-2xl font-bold">İletişim</h1>
                 <div class="bg-gray-700 h-px w-full"></div>
                 <div class="flex flex-col gap-2">
                     <h2 class="text-lg font-semibold">Mobil</h2>
@@ -46,7 +46,7 @@
 
         </div>
         <div class="w-full text-sm bg-white text-center p-2 bg-opacity-50">
-            <span>© 2022 Deniz Yılmaz Clinic | All rights reserved.</span>
+            <span>© 2022 Deniz Yılmaz | All rights reserved.</span>
         </div>
     </footer>
 </template>

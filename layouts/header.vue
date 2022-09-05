@@ -43,11 +43,11 @@
                                 <i class="fa-solid fa-sort-down"></i>
                             </NuxtLink>
                             <div class="flex absolute invisible mt-1 opacity-0 group-hover:visible group-hover:opacity-100 transition duration-400 w-full flex-col align-center bg-blue-200">
-                                <div><span>SLM</span></div>
-                                <div><span>SLM</span></div>
-                                <div><span>SLM</span></div>
-                                <div><span>SLM</span></div>
-                                <div><span>SLM</span></div>
+                                <div><span>hizmet1</span></div>
+                                <div><span>hizmet2</span></div>
+                                <div><span>hizmet3</span></div>
+                                <div><span>hizmet4</span></div>
+                                <div><span>hizmet5</span></div>
                             </div>
                         </div>
 
