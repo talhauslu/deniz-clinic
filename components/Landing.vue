@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="flex flex-row w-full overflow-hidden relative justify-between h-80vh">
+    <div class="flex flex-row w-full overflow-hidden relative justify-between min-h-80vh">
         <div
             class="flex flex-col justify-between 500:justify-around sm:justify-center sm:gap-8 w-full sm:w-1/2 h-full py-8 sm:py-0 px-8 z-10">
             <h1 class="text-5xl sm:text-7xl text-white sm:text-gray-600 font-semibold">Sağlıkta dönüşümü keşfet</h1>
