@@ -2,7 +2,15 @@
 export default {
     data(){
         return({
-            top : "flex"
+            top : "flex",
+            services:[
+                {name:"Hizmet 1", url:"/"},
+                {name:"Hizmet 2", url:"/"},
+                {name:"Hizmet 3", url:"/"},
+                {name:"Hizmet 4", url:"/"},
+                {name:"Hizmet 5", url:"/"},
+
+            ]
         })
     },
     mounted() {
@@ -25,8 +33,8 @@ export default {
 </script>
 
 <template>
-    <header class=" z-50 shadow sticky top-0">
-        <div class="  w-full bg-white ">
+    <header class="z-50 shadow sticky top-0">
+        <div class="relative w-full bg-white ">
             <div :class="`hidden md:${top} md:flex-row w-full h-20 justify-around text-gray-600 p-3 `">
                 <div class="flex flex-row justify-around items-center gap-2">
                     <i class="fa-solid fa-location-dot text-4xl text-pink-200"></i>
@@ -69,13 +77,10 @@ export default {
                                 <span>HİZMETLERİMİZ</span>
                                 <i class="fa-solid fa-sort-down"></i>
                             </NuxtLink>
-                            <div
-                                class="flex absolute invisible mt-1 opacity-0 group-hover:visible group-hover:opacity-100 transition duration-400 w-full flex-col align-center bg-blue-200">
-                                <div><span>hizmet1</span></div>
-                                <div><span>hizmet2</span></div>
-                                <div><span>hizmet3</span></div>
-                                <div><span>hizmet4</span></div>
-                                <div><span>hizmet5</span></div>
+                            <div class="flex absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 transition duration-400 w-80 flex-col align-center bg-blue-200 shadow-lg">
+                                
+                                    <span  v-for="service of services" class="p-2 hover:bg-white cursor-pointer">{{service.name}}</span>
+
                             </div>
                         </div>
 
