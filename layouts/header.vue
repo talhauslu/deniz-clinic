@@ -1,14 +1,14 @@
 <script>
 export default {
-    data(){
-        return({
-            top : "flex",
-            services:[
-                {name:"Hizmet 1", url:"/"},
-                {name:"Hizmet 2", url:"/"},
-                {name:"Hizmet 3", url:"/"},
-                {name:"Hizmet 4", url:"/"},
-                {name:"Hizmet 5", url:"/"},
+    data() {
+        return ({
+            top: "flex",
+            services: [
+                { name: "Hizmet 1", url: "/" },
+                { name: "Hizmet 2", url: "/" },
+                { name: "Hizmet 3", url: "/" },
+                { name: "Hizmet 4", url: "/" },
+                { name: "Hizmet 5", url: "/" },
 
             ]
         })
@@ -21,10 +21,10 @@ export default {
     },
     methods: {
         handleScroll(event) {
-            if(window.scrollY > 160){
+            if (window.scrollY > 128) {
                 this.top = "hidden"
             }
-            else if(window.scrollY < 80){
+            else if (window.scrollY < 64) {
                 this.top = "flex"
             }
         }
@@ -35,7 +35,7 @@ export default {
 <template>
     <header class="z-50 shadow sticky top-0">
         <div class="relative w-full bg-white ">
-            <div :class="`hidden md:${top} md:flex-row w-full h-20 justify-around text-gray-600 p-3 `">
+            <div :class="`hidden md:${top} md:flex-row w-full h-16 justify-around text-gray-600 p-3 `">
                 <div class="flex flex-row justify-around items-center gap-2">
                     <i class="fa-solid fa-location-dot text-4xl text-pink-200"></i>
                     <div class="text-sm flex flex-col flex-around">
@@ -64,23 +64,23 @@ export default {
                 </div>
             </div>
             <div id="sticky"
-                class="flex flex-row w-full justify-between px-6 py-2 bg-opacity-60 items-center h-auto bg-indigo-50 sticky top-0">
+                class="flex flex-row md:flex-col 1120:flex-row gap-4 1120:gap-0 w-full justify-between px-6 py-2 bg-opacity-60 items-center h-auto bg-indigo-50 sticky top-0">
 
                 <img src="/logo-removebg-preview.png" class="object-contain h-auto w-2/3 400:w-auto 400:h-20" />
 
-                <div class="hidden md:flex flex-row w-full 1120:w-auto justify-around items-center gap-8">
-                    <nav class="flex flex-col 1120:flex-row gap-8 font-bold uppercase text-gray-600 text-sm flex-wrap">
+                <div class="hidden md:flex flex-col 1120:flex-row w-full 1120:w-auto justify-around items-center gap-8">
+                    <nav class="flex flex-row gap-8 font-bold uppercase text-gray-600 text-sm flex-wrap">
                         <NuxtLink to="/home">ANA SAYFA</NuxtLink>
 
-                        <div class="relative group">
-                            <NuxtLink class=" relative flex flex-row align-center gap-2" to="/home">
+                        <div class="relative group ">
+                            <NuxtLink class=" relative flex flex-row align-center justify-center gap-2" to="/home">
                                 <span>HİZMETLERİMİZ</span>
                                 <i class="fa-solid fa-sort-down"></i>
                             </NuxtLink>
-                            <div class="flex absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 transition duration-400 w-80 flex-col align-center bg-blue-200 shadow-lg">
-                                
-                                    <span  v-for="service of services" class="p-2 hover:bg-white cursor-pointer">{{service.name}}</span>
-
+                            <div
+                                class="flex absolute invisible opacity-0 bg-white group-hover:visible group-hover:opacity-100 transition duration-400 w-80 flex-col align-center shadow-lg left-0 right-0">
+                                <span v-for="service of services"
+                                    class="p-4 hover:bg-pink-100 cursor-pointer">{{service.name}} ASDASDSADSDSADASDASDASDSADASDASDASDAS</span>
                             </div>
                         </div>
 
@@ -91,7 +91,7 @@ export default {
                     </nav>
 
                     <button
-                        class="p-4 rounded-lg bg-gray-600 font-semibold border text-white hover:bg-opacity-50 transition-all">
+                        class="hidden 1120:flex p-4 rounded-lg bg-gray-600 font-semibold border text-white hover:bg-opacity-50 transition-all">
                         Randevu Al
                     </button>
                 </div>
