@@ -1,9 +1,10 @@
 <script>
 import Landing from '../components/Landing.vue';
 import LandingVeneers from '../components/LandingVeneers.vue';
+import Services from '../components/Services.vue';
 
     export default{
-    components: { Landing, LandingVeneers }
+    components: { Landing, LandingVeneers, Services }
 }
 
 </script>
@@ -12,5 +13,6 @@ import LandingVeneers from '../components/LandingVeneers.vue';
     <section>
         <Landing />
         <LandingVeneers />
+        <Services/>
     </section>
 </template>
