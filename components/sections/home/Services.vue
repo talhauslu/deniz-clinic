@@ -39,7 +39,7 @@ section {
 }
 
 #services {
-    background-image: url(./../static/services_background.webp);
+    background-image: url(./../../../static/services_background.webp);
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;

@@ -64,7 +64,7 @@ export default {
                 </div>
             </div>
             <div id="sticky"
-                class="flex flex-row md:flex-col 1120:flex-row gap-4 1120:gap-0 w-full justify-between px-6 py-2 bg-opacity-60 items-center h-auto bg-indigo-50 sticky top-0">
+                class="flex flex-row md:flex-col lg:flex-row gap-4 1120:gap-0 w-full justify-between px-6 py-2 bg-opacity-60 items-center h-auto bg-indigo-50 sticky top-0">
 
                 <img src="/logo-removebg-preview.png" class="object-contain h-auto w-2/3 400:w-auto 400:h-20" />
 
@@ -73,10 +73,10 @@ export default {
                         <NuxtLink to="/home">ANA SAYFA</NuxtLink>
 
                         <div class="relative group ">
-                            <NuxtLink class=" relative flex flex-row align-center justify-center gap-2" to="/home">
+                            <div class=" relative flex flex-row align-center justify-center gap-2">
                                 <span>HİZMETLERİMİZ</span>
                                 <i class="fa-solid fa-sort-down"></i>
-                            </NuxtLink>
+                            </div>
                             <div
                                 class="flex absolute invisible opacity-0 bg-white group-hover:visible group-hover:opacity-100 transition duration-400 w-80 flex-col align-center shadow-lg left-0 right-0">
                                 <span v-for="service of services"

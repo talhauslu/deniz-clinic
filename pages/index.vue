@@ -1,7 +1,7 @@
 <script>
-import Landing from '../components/Landing.vue';
-import LandingVeneers from '../components/LandingVeneers.vue';
-import Services from '../components/Services.vue';
+import Landing from '../components/sections/home/Landing.vue';
+import LandingVeneers from '../components/sections/home/LandingVeneers.vue';
+import Services from '../components/sections/home/Services.vue';
 
     export default{
     components: { Landing, LandingVeneers, Services }
