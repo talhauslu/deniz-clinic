@@ -1,7 +1,33 @@
+<script>
+export default {
+    data(){
+        return({
+            top : "flex"
+        })
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        handleScroll(event) {
+            if(window.scrollY > 160){
+                this.top = "hidden"
+            }
+            else if(window.scrollY < 80){
+                this.top = "flex"
+            }
+        }
+    },
+}
+</script>
+
 <template>
-    <header class="relative z-50 shadow">
-        <div class="relative flex flex-col w-full bg-white ">
-            <div class="hidden md:flex md:flex-row w-full justify-around text-gray-600 p-3 ">
+    <header class=" z-50 shadow sticky top-0">
+        <div class="  w-full bg-white ">
+            <div :class="`hidden md:${top} md:flex-row w-full h-20 justify-around text-gray-600 p-3 `">
                 <div class="flex flex-row justify-around items-center gap-2">
                     <i class="fa-solid fa-location-dot text-4xl text-pink-200"></i>
                     <div class="text-sm flex flex-col flex-around">
@@ -29,7 +55,8 @@
                     <i class="fa-brands fa-whatsapp cursor-pointer p-2 rounded-full hover:bg-gray-200"></i>
                 </div>
             </div>
-            <div class="flex flex-row w-full justify-between px-6 py-2 bg-opacity-60 items-center bg-indigo-50">
+            <div id="sticky"
+                class="flex flex-row w-full justify-between px-6 py-2 bg-opacity-60 items-center h-auto bg-indigo-50 sticky top-0">
 
                 <img src="/logo-removebg-preview.png" class="object-contain h-auto w-2/3 400:w-auto 400:h-20" />
 
@@ -69,3 +96,6 @@
 
     </header>
 </template>
+
+<style>
+</style>
