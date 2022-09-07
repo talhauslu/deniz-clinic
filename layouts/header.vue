@@ -72,7 +72,7 @@ export default {
                     <nav class="flex flex-row gap-8 font-bold uppercase text-gray-600 text-sm flex-wrap">
                         <NuxtLink to="/home">ANA SAYFA</NuxtLink>
 
-                        <div class="relative group ">
+                        <div class="relative group cursor-pointer">
                             <div class=" relative flex flex-row align-center justify-center gap-2">
                                 <span>HİZMETLERİMİZ</span>
                                 <i class="fa-solid fa-sort-down"></i>
@@ -80,7 +80,7 @@ export default {
                             <div
                                 class="flex absolute invisible opacity-0 bg-white group-hover:visible group-hover:opacity-100 transition duration-400 w-80 flex-col align-center shadow-lg left-0 right-0">
                                 <span v-for="service of services"
-                                    class="p-4 hover:bg-pink-100 cursor-pointer">{{service.name}} ASDASDSADSDSADASDASDASDSADASDASDASDAS</span>
+                                    class="p-4 hover:bg-pink-100 cursor-pointer">{{service.name}}</span>
                             </div>
                         </div>
 
