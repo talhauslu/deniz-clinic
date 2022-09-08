@@ -43,7 +43,7 @@ export default {
             </div>
         </div>
         <div class="w-full md:w-1/3 p-4">
-            <VueSlickCarousel class="p-4 m-4 border border-gray-400 shadow-lg rounded"
+            <VueSlickCarousel class="p-4 m-4 border border-gray-300 shadow-lg rounded"
                 :autoplay="true" :arrows="true" :dots="false">
                 <div v-for="comment of comments">
                     <h1 class="text-2xl mb-4">{{comment.author}}</h1>
