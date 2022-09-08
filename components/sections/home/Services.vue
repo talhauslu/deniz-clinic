@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-    <section class="w-full my-4 flex flex-col justify-center items-center p-3 gap-8">
+    <section class="w-full my-4 flex flex-col justify-center items-center py-3 gap-8">
         <h1 class="text-3xl">Servislerimiz</h1>
         <div class="w-full md:w-4/5 h-full shadow-md bg-right sm:bg-center bg-blue-300" id="services">
             <div class="w-full h-full text-white flex flex-row flex-wrap">

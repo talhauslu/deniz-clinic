@@ -34,33 +34,36 @@ export default {
 
 <template>
     <section class="flex flex-col md:flex-row justify-around items-center p-4">
-        <div class="flex flex-col items-center justify-center w-full md:w-2/3">
-            <div class="flex flex-col items-center justify-center gap-8 ">
-                <i class="fa-solid fa-quote-left self-start"></i>
-                <h1 class="text-4xl">Hastalarımızın geri dönüşleri bizim için çok önemli</h1>
-                <i class="fa-solid fa-quote-right self-end"></i>
+        <div class="flex flex-col items-center justify-center w-full md:w-1/2">
+            <div class="flex flex-col items-center justify-around gap-8 text-4xl text-center">
+                <!-- <i class="fa-solid fa-quote-left self-start"></i> -->
+                <i class="fa-solid fa-message"></i>
+                <h1 class="">Hastalarımızın geri dönüşleri bizim için çok önemli</h1>
+                <!-- <i class="fa-solid fa-quote-right self-end"></i> -->
 
             </div>
         </div>
         <div class="w-full md:w-1/3 p-4">
-            <VueSlickCarousel class="p-4 m-4 border border-gray-300 shadow-lg rounded"
-                :autoplay="true" :arrows="true" :dots="false">
+            <i class="fa-solid fa-quote-left self-start"></i>
+            <VueSlickCarousel class="p-4 m-4 border border-gray-300 shadow-lg rounded" :autoplay="true" :arrows="true"
+                :dots="false">
                 <div v-for="comment of comments">
                     <h1 class="text-2xl mb-4">{{comment.author}}</h1>
                     <p class="">{{comment.tr}}</p>
                 </div>
             </VueSlickCarousel>
+            <i class="fa-solid fa-quote-right float-right"></i>
             <a class="self-start text-center"
-                    href="https://www.google.com/search?q=Uzm.+Dr.+Deniz+Y%C4%B1lmaz&sxsrf=ALiCzsZzFKpVeH-Xsrb6UXKK16jqfZFu4A%3A1662583508997&ei=1AIZY8y-PLuFxc8Pos-QgAQ&ved=0ahUKEwjM-NmbxoP6AhW7QvEDHaInBEAQ4dUDCA4&uact=5&oq=Uzm.+Dr.+Deniz+Y%C4%B1lmaz&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEB4QFjIGCAAQHhAWOgQIIxAnOgsILhDHARDRAxCRAjoFCAAQgAQ6DgguEIAEEMcBENEDENQCOgsILhCABBDHARDRAzoICC4QgAQQ1AI6BQguEIAEOgsILhCABBDHARCvAToFCAAQywE6CwguEMcBEK8BEMsBOgoILhDHARCvARATOggIABAeEBYQEzoFCAAQhgNKBAhBGAFKBAhGGABQzQlYgitg0y1oA3AAeACAAZICiAGzHZIBBjAuMTYuNZgBAKABAcABAQ&sclient=gws-wiz#lrd=0x14cab7b4431dcb6d:0xc3a5f8c70b1509d3,1,,,">
-                    <h1 class="text-xl underline ">See all reviews.</h1>
-                    <div class="text-yellow-400  text-center">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                </a>
+                href="https://www.google.com/search?q=Uzm.+Dr.+Deniz+Y%C4%B1lmaz&sxsrf=ALiCzsZzFKpVeH-Xsrb6UXKK16jqfZFu4A%3A1662583508997&ei=1AIZY8y-PLuFxc8Pos-QgAQ&ved=0ahUKEwjM-NmbxoP6AhW7QvEDHaInBEAQ4dUDCA4&uact=5&oq=Uzm.+Dr.+Deniz+Y%C4%B1lmaz&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEB4QFjIGCAAQHhAWOgQIIxAnOgsILhDHARDRAxCRAjoFCAAQgAQ6DgguEIAEEMcBENEDENQCOgsILhCABBDHARDRAzoICC4QgAQQ1AI6BQguEIAEOgsILhCABBDHARCvAToFCAAQywE6CwguEMcBEK8BEMsBOgoILhDHARCvARATOggIABAeEBYQEzoFCAAQhgNKBAhBGAFKBAhGGABQzQlYgitg0y1oA3AAeACAAZICiAGzHZIBBjAuMTYuNZgBAKABAcABAQ&sclient=gws-wiz#lrd=0x14cab7b4431dcb6d:0xc3a5f8c70b1509d3,1,,,">
+                <h1 class="text-xl underline ">Bütün yorumları gör.</h1>
+                <div class="text-yellow-400  text-center">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </a>
         </div>
     </section>
 </template>

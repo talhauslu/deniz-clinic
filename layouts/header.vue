@@ -66,11 +66,13 @@ export default {
             <div id="sticky"
                 class="flex flex-row md:flex-col lg:flex-row gap-4 1120:gap-0 w-full justify-between px-6 py-2 bg-opacity-60 items-center h-auto bg-indigo-50 sticky top-0">
 
-                <img src="/logo-removebg-preview.png" class="object-contain h-auto w-2/3 400:w-auto 400:h-20" />
+                <NuxtLink to="/" class="h-auto w-2/3 400:w-auto 400:h-20">
+                    <img src="/logo-removebg-preview.png" class="object-contain h-full w-full" />
+                </NuxtLink>
 
                 <div class="hidden md:flex flex-col 1120:flex-row w-full 1120:w-auto justify-around items-center gap-8">
                     <nav class="flex flex-row gap-8 font-bold uppercase text-gray-600 text-sm flex-wrap">
-                        <NuxtLink to="/home">ANA SAYFA</NuxtLink>
+                        <NuxtLink to="/">ANA SAYFA</NuxtLink>
 
                         <div class="relative group cursor-pointer">
                             <div class=" relative flex flex-row align-center justify-center gap-2">
@@ -84,10 +86,10 @@ export default {
                             </div>
                         </div>
 
-                        <NuxtLink to="/home">HAKKIMIZDA</NuxtLink>
-                        <NuxtLink to="/home">BLOG</NuxtLink>
-                        <NuxtLink to="/home">MEDYA</NuxtLink>
-                        <NuxtLink to="/home">İLETİŞİM</NuxtLink>
+                        <NuxtLink to="/about">HAKKIMIZDA</NuxtLink>
+                        <NuxtLink to="/blog">BLOG</NuxtLink>
+                        <NuxtLink to="/media">MEDYA</NuxtLink>
+                        <NuxtLink to="/contact">İLETİŞİM</NuxtLink>
                     </nav>
 
                     <button
