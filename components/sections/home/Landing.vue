@@ -13,7 +13,7 @@
                 Randevu Al
             </button>
         </div>
-        <video data-aos="fade-left"
+        <video
             class="hidden lg:block absolute right-0 object-cover w-1/2 h-full object-center -z-10 border border-white"
             autoplay muted loop id="myVideo">
             <source src="~/assets/media/entrance_video.mp4" type="video/mp4">
