@@ -30,3 +30,23 @@ input:focus, textarea:focus {
 
 }
 
+.swipe-from-right-enter{
+    transform:translateX(13rem);
+    opacity:0
+}
+
+.swipe-from-left-enter{
+    transform:translateX(-13rem);
+    opacity:0
+}
+
+.swipe-from-right-enter-active, .swipe-from-left-enter-active{
+    transition: all 1.2s;
+}
+
+.swipe-from-right-enter-to, .swipe-from-left-enter-to{
+    transform:translateX(0);
+    opacity:1
+}
+
+

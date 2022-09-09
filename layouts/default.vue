@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <main>
+    <main class="overflow-x-hidden">
         <Header />
         <Nuxt />
         <Footer />
