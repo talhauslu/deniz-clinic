@@ -35,14 +35,25 @@ export default {
 <template>
     <section class="flex flex-col md:flex-row justify-around items-center p-4">
         <div class="flex flex-col items-center justify-center w-full md:w-1/2">
-                <div data-aos="fade-right" class="flex flex-col items-center justify-around gap-8 text-4xl text-center">
-                    <i class="fa-solid fa-message"></i>
-                    <h1 class="">Hastalarımızın geri dönüşleri bizim için çok önemli</h1>
-                </div>
+            <div data-aos="fade-right" class="flex flex-col items-center justify-around gap-8 text-4xl text-center">
+                <i class="fa-solid fa-message"></i>
+                <h1 class="">Hastalarımızın geri dönüşleri bizim için çok önemli</h1>
+                <span class="text-sm">
+                    <span class="text-yellow-400 text-center">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                      22 reviews on 
+                    <nuxt-img class="w-9 object-contain inline" src="/google.png"/>
+                </span>
+            </div>
         </div>
         <div data-aos="fade-left" class="w-full md:w-1/3 p-4">
             <i class="fa-solid fa-quote-left self-start"></i>
-            <VueSlickCarousel class="p-4 m-4 border border-gray-300 shadow-lg rounded" :autoplay="true" :arrows="true"
+            <VueSlickCarousel class="p-4 m-4 border border-gray-300 shadow-lg rounded bg-white" :autoplay="true" :arrows="true"
                 :dots="false">
                 <div v-for="comment of comments">
                     <h1 class="text-2xl mb-4">{{comment.author}}</h1>
@@ -53,13 +64,6 @@ export default {
             <a class="self-start text-center"
                 href="https://www.google.com/search?q=Uzm.+Dr.+Deniz+Y%C4%B1lmaz&sxsrf=ALiCzsZzFKpVeH-Xsrb6UXKK16jqfZFu4A%3A1662583508997&ei=1AIZY8y-PLuFxc8Pos-QgAQ&ved=0ahUKEwjM-NmbxoP6AhW7QvEDHaInBEAQ4dUDCA4&uact=5&oq=Uzm.+Dr.+Deniz+Y%C4%B1lmaz&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEB4QFjIGCAAQHhAWOgQIIxAnOgsILhDHARDRAxCRAjoFCAAQgAQ6DgguEIAEEMcBENEDENQCOgsILhCABBDHARDRAzoICC4QgAQQ1AI6BQguEIAEOgsILhCABBDHARCvAToFCAAQywE6CwguEMcBEK8BEMsBOgoILhDHARCvARATOggIABAeEBYQEzoFCAAQhgNKBAhBGAFKBAhGGABQzQlYgitg0y1oA3AAeACAAZICiAGzHZIBBjAuMTYuNZgBAKABAcABAQ&sclient=gws-wiz#lrd=0x14cab7b4431dcb6d:0xc3a5f8c70b1509d3,1,,,">
                 <h1 class="text-xl underline ">Bütün yorumları gör.</h1>
-                <div class="text-yellow-400  text-center">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
             </a>
         </div>
     </section>

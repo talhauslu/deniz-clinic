@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="flex flex-row w-full overflow-hidden relative justify-between h-80vh min-h-80vh">
+    <section class="flex flex-row w-full overflow-hidden relative justify-between h-80vh min-h-80vh">
         <transition appear name="swipe-from-left">
             <div
                 class="flex flex-col justify-between 500:justify-around sm:justify-center sm:gap-8 w-full sm:w-1/2 h-full p-2 sm:p-8 z-10">
@@ -25,7 +25,7 @@
         <div class="w-full h-full block lg:hidden absolute bg-black">
             <nuxt-img class="object-cover w-full h-full object-center opacity-80" src="/smiling_girl.jpg" />
         </div>
-    </div>
+    </section>
 </template>
 
 <style scoped>

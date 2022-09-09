@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <main >
+    <main class="bg-blue-50">
         <Header />
         <Nuxt />
         <Footer />

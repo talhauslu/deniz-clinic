@@ -35,7 +35,7 @@ export default {
 </script>
 
 <template>
-    <div class="flex flex-col bg-blue-50 ">
+    <section class="flex flex-col bg-blue-50 ">
         <div class="w-full bg-blue-100  text-center py-8">
             <div data-aos="fade-up" class="w-full text-white bg-blue-300 shadow-md p-8">
                 <h1 class="text-lg">Uzm. Dr. Deniz Yılmaz Diş Kliniği</h1>
@@ -59,7 +59,7 @@ export default {
                 </button>
             </div>
         </div>
-    </div>
+    </section>
 
 
 
