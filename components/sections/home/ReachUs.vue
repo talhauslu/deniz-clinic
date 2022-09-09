@@ -18,7 +18,7 @@
                 </div>
 
                 <div>
-                    <button class="bg-pink-300 border hover:bg-pink-400 transition-all p-2 text-sm">Gönder</button>
+                    <button class="bg-pink-300 border hover:bg-pink-400 transition-all p-2 text-sm float-right">Gönder</button>
                 </div>
 
             </form>

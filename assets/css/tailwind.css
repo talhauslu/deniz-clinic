@@ -25,6 +25,10 @@ input, textarea{
 
 }
 
+section{
+    overflow-x: hidden;
+}
+
 input:focus, textarea:focus {
     border: 2px solid pink;
 
