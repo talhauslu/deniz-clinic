@@ -19,7 +19,7 @@
             <source src="~/assets/media/entrance_video.mp4" type="video/mp4">
         </video>
         <div class="w-full h-full block lg:hidden absolute bg-black">
-            <nuxt-img class="object-cover w-full h-full object-center opacity-80" src="/smiling_girl.jpg" />
+            <nuxt-img  class="object-cover w-full h-full object-center opacity-80" src="/smiling_girl.jpg" />
         </div>
     </div>
 </template>
