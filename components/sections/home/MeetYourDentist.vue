@@ -1,9 +1,9 @@
 <template>
     <section class="flex flex-col md:flex-row bg-white p-8 gap-4 md:gap-0">
-        <div class="w-full md:w-1/2 flex justify-center items-center">
+        <div class="animation-element fade-left w-full md:w-1/2 flex justify-center items-center">
             <nuxt-img class="w-3/4 object-contain shadow-xl" src="/deniz1.png" />
         </div>
-        <div class="w-full md:w-2/3 flex flex-col justify-center gap-8 text-center md:text-left">
+        <div class="animation-element fade-right w-full md:w-2/3 flex flex-col justify-center gap-8 text-center md:text-left">
             <h1 class="text-4xl font-semibold text-gray-700">Uzm. Dr. Deniz Yılmaz ile tanış</h1>
             <span>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam autem fugiat. Similique

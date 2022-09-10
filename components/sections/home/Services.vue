@@ -22,7 +22,7 @@ export default {
     <section class="w-full my-4 flex flex-col justify-center items-center py-3 gap-8">
         <h1 class="text-3xl">Servislerimiz</h1>
         <div  class="w-full md:w-4/5 h-full shadow-md bg-right sm:bg-center bg-blue-300" id="services">
-            <div data-aos="fade-down" class="w-full h-full text-white flex flex-row flex-wrap">
+            <div class="animation-element fade-up w-full h-full text-white flex flex-row flex-wrap">
                 <div v-for="service in services"
                     class="text-3xl sm:text-5xl h-44 sm:h-52 w-1/2 sm:w-1/3 border bg-black bg-opacity-30 hover:bg-opacity-0 transition-all border-white border-opacity-10 flex flex-col justify-center items-center cursor-pointer">
                     <i :class="service.icon" class="text-xl sm:text-3xl"></i>

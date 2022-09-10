@@ -35,7 +35,7 @@ export default {
 <template>
     <section class="flex flex-col md:flex-row justify-around items-center p-4">
         <div class="flex flex-col items-center justify-center w-full md:w-1/2">
-            <div data-aos="fade-right" class="flex flex-col items-center justify-around gap-8 text-4xl text-center">
+            <div class="flex flex-col items-center justify-around gap-8 text-4xl text-center">
                 <i class="fa-solid fa-message"></i>
                 <h1 class="">Hastalarımızın geri dönüşleri bizim için çok önemli</h1>
                 <span class="text-sm">
@@ -51,7 +51,7 @@ export default {
                 </span>
             </div>
         </div>
-        <div data-aos="fade-left" class="w-full md:w-1/3 p-4">
+        <div class="w-full md:w-1/3 p-4">
             <i class="fa-solid fa-quote-left self-start"></i>
             <VueSlickCarousel class="p-4 m-4 border border-gray-300 shadow-lg rounded bg-white" :autoplay="true" :arrows="true"
                 :dots="false">
