@@ -73,7 +73,7 @@ export default {
 </script>
 
 <template>
-    <section class="flex flex-col items-center">
+    <section class="">
         <Landing />
         <LandingVeneers />
         <Services />
