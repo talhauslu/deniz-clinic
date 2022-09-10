@@ -1,7 +1,7 @@
 <template>
     <section class="flex flex-col md:flex-row justify-center pb-4">
         <div class="w-full md:w-1/2 flex items-center justify-center ">
-            <form data-aos="fade-right"  class="flex w-full md:w-2/3 h-full flex-col justify-around gap-4 border p-4 text-gray-700">
+            <form data-aos="fade-right"  class="flex w-full md:w-2/3 h-full flex-col justify-around gap-4 p-4 text-gray-700">
                 <h1 class="text-2xl font-semibold">Soru sor</h1>
 
                 <div class="w-full flex flex-row justify-between">
