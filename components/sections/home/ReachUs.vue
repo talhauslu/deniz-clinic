@@ -9,7 +9,7 @@ export default {
 
 <template>
     <section class="w-full flex justify-center items-center pb-4">
-        <div class="w-4/5 flex flex-col md:flex-row justify-center p-4 bg-white">
+        <div class="w-full md:w-4/5 flex flex-col md:flex-row justify-center p-4 bg-white">
             <div class="animation-element fade-left w-full md:w-1/2 flex items-center justify-center ">
                 <ReachUsForm class="w-full md:w-4/5 h-full" />
             </div>
