@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --port 5050",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
@@ -16,7 +16,6 @@
     "vue-server-renderer": "^2.6.14",
     "vue-slick-carousel": "^1.0.6",
     "vue-template-compiler": "^2.6.14",
-    "vue-typer": "^1.2.0",
     "webpack": "^4.46.0"
   },
   "devDependencies": {

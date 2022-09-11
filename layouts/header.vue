@@ -1,5 +1,8 @@
 <script>
 export default {
+    props: {
+        navbarOpen: Boolean
+    },
     data() {
         return ({
             top: "flex",
@@ -9,7 +12,6 @@ export default {
                 { name: "Hizmet 3", url: "/" },
                 { name: "Hizmet 4", url: "/" },
                 { name: "Hizmet 5", url: "/" },
-
             ]
         })
     },
@@ -27,6 +29,9 @@ export default {
             else if (window.scrollY < 64) {
                 this.top = "flex"
             }
+        },
+        toggleNavbar() {
+            this.$emit("togglenavbar")
         }
     },
 }
@@ -97,7 +102,10 @@ export default {
                         Randevu Al
                     </button>
                 </div>
-                <i class="fa-solid fa-bars block md:hidden text-3xl"></i>
+                <transition name="mobileNavButton">
+                    <i v-if="!navbarOpen" @click="toggleNavbar" class="fa-solid fa-bars block md:hidden text-3xl"></i>
+                    <i v-else @click="toggleNavbar" class="fa-solid fa-x block md:hidden text-3xl"></i>
+                </transition>
             </div>
         </div>
 
@@ -105,4 +113,18 @@ export default {
 </template>
 
 <style>
+.mobileNavButton-enter-active,
+.mobileNavButton-leave-active {
+  transition: all 0.25s ease-out;
+}
+
+.mobileNavButton-enter-from {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.mobileNavButton-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
 </style>

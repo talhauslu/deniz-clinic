@@ -1,5 +1,5 @@
 <template>
-    <main>
-        ABOUT
-    </main>
+    <div>
+        about
+    </div>
 </template>

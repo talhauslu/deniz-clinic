@@ -36,7 +36,7 @@ section{
 }
 
 
-.swipe-from-right-enter{
+/* .swipe-from-right-enter{
     transform:translateX(13rem);
     opacity:0
 }
@@ -53,6 +53,10 @@ section{
 .swipe-from-right-enter-to, .swipe-from-left-enter-to{
     transform:translateX(0);
     opacity:1
-}
+} */
+
+
+
+
 
 
