@@ -7,9 +7,12 @@ export default {
             required: true
         }
     },
-    methods:{
-        toggleSubmenu(){
+    methods: {
+        toggleSubmenu() {
             this.submenuOpen = !this.submenuOpen
+        },
+        toggleNavbar() {
+            this.$emit("togglenavbar")
         }
     },
     data() {
@@ -29,43 +32,46 @@ export default {
 
 <template>
     <transition name="mobileNav">
-    <div v-if="open" class="w-screen min-h-screen overflow-y-auto fixed z-50 right-0 flex flex-col items-center bg-white p-4 px-8 gap-4">
-        <nuxt-img src="/logo2-removebg-preview.png" class="h-1/6 object-contain" />
+        <div v-if="open" class="w-screen h-screen overflow-y-auto fixed z-50 top-0 bottom-0  right-0 ">
 
-        <div class="flex flex-col gap-4 w-full ">
-            <div class="self-center">
-                <label>Language: </label>
-                <select class="inline">
-                    <option>Türkçe</option>
-                    <option>English</option>
-                    <option>Deutsch</option>
-                </select>
-            </div>
-            <nav class="flex flex-col font-bold uppercase text-gray-600">
-                <NuxtLink class="border-b p-2" to="/">ANA SAYFA</NuxtLink>
+            <div class="w-full h-full relative flex flex-col justify-around bg-white p-4 px-8 gap-4">
 
-                <div class="border-b p-2">
-                    <div class="flex flex-row items-center" @click="toggleSubmenu">
-                        <span class="inline">HİZMETLERİMİZ </span>
-                        <i class="fa-solid fa-sort-down inline"></i>
-                    </div>
-                    <transition name="submenu">
-                        <div v-if="submenuOpen"
-                            class="flex flex-col">
-                            <span v-for="service of services"
-                                class="hover:bg-pink-100 cursor-pointer p-2 border-b pl-1">{{service.name}}</span>
-                        </div>
-                    </transition>
+                <i @click="toggleNavbar" class="fa-solid fa-x block text-3xl absolute right-4 top-4"></i>
+
+                <nuxt-img src="/logo-removebg-preview.png" class="w-4/5 object-contain self-center" />
+
+                <div class="self-center">
+                    <label>Language: </label>
+                    <select class="inline">
+                        <option>Türkçe</option>
+                        <option>English</option>
+                        <option>Deutsch</option>
+                    </select>
                 </div>
 
-                <NuxtLink class="border-b p-2" to="/about">HAKKIMIZDA</NuxtLink>
-                <NuxtLink class="border-b p-2" to="/blog">BLOG</NuxtLink>
-                <NuxtLink class="border-b p-2" to="/media">MEDYA</NuxtLink>
-                <NuxtLink class="border-b p-2" to="/contact">İLETİŞİM</NuxtLink>
-            </nav>
-        </div>
 
-    </div>
+                <nav class="flex flex-col font-bold uppercase text-gray-600">
+                    <NuxtLink class="border-b p-2" to="/">ANA SAYFA</NuxtLink>
+
+                    <div class="border-b p-2">
+                        <span @click="toggleSubmenu" class="inline-flex flex-row items-center">HİZMETLERİMİZ <i
+                                class="fa-solid fa-sort-down inline"></i></span>
+                        <transition name="submenu">
+                            <div v-if="submenuOpen" class="flex flex-col">
+                                <span v-for="service of services"
+                                    class="hover:bg-pink-100 cursor-pointer p-2 border-b pl-1">{{service.name}}</span>
+                            </div>
+                        </transition>
+                    </div>
+
+                    <NuxtLink class="border-b p-2" to="/about">HAKKIMIZDA</NuxtLink>
+                    <NuxtLink class="border-b p-2" to="/blog">BLOG</NuxtLink>
+                    <NuxtLink class="border-b p-2" to="/media">MEDYA</NuxtLink>
+                    <NuxtLink class="border-b p-2" to="/contact">İLETİŞİM</NuxtLink>
+                </nav>
+            </div>
+
+        </div>
     </transition>
 </template>
 
