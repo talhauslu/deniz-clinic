@@ -28,8 +28,8 @@ export default {
 </script>
 
 <template>
-    <!-- <transition name="mobileNav"> -->
-    <div class="w-screen min-h-screen overflow-y-auto fixed z-50 right-0 flex flex-col items-center bg-white p-4 px-8 gap-4">
+    <transition name="mobileNav">
+    <div v-if="open" class="w-screen min-h-screen overflow-y-auto fixed z-50 right-0 flex flex-col items-center bg-white p-4 px-8 gap-4">
         <nuxt-img src="/logo2-removebg-preview.png" class="h-1/6 object-contain" />
 
         <div class="flex flex-col gap-4 w-full ">
@@ -66,7 +66,7 @@ export default {
         </div>
 
     </div>
-    <!-- </transition> -->
+    </transition>
 </template>
 
 <style scoped>
