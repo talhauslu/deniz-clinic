@@ -63,9 +63,9 @@ export default {
                     </div>
                 </div>
                 <div class="flex flex-row justify-around items-center gap-4 text-2xl text-gray-600 ">
-                    <i class="fa-brands fa-instagram cursor-pointer p-2 rounded-full hover:bg-gray-200"></i>
+                    <a target="_blank" href="https://www.instagram.com/dr.denizyilmaz"><i class="fa-brands fa-instagram cursor-pointer p-2 rounded-full hover:bg-gray-200"></i></a>
                     <i class="fa-brands fa-linkedin cursor-pointer p-2 rounded-full hover:bg-gray-200"></i>
-                    <i class="fa-brands fa-whatsapp cursor-pointer p-2 rounded-full hover:bg-gray-200"></i>
+                    <a target="_blank" href="https://wa.me/+905306509433"><i class="fa-brands fa-whatsapp cursor-pointer p-2 rounded-full hover:bg-gray-200"></i></a>
                 </div>
             </div>
             <div id="sticky"

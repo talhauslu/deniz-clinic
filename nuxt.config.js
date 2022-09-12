@@ -1,8 +1,14 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
+  watchers: {
+    webpack: {
+      aggregateTimeout: 300,
+      poll: 1000
+    }
+  },
   head: {
     title: 'deniz-clinic',
     htmlAttrs: {
@@ -23,9 +29,9 @@ export default {
         referrerpolicy: "no-referrer"
       }
     ],
-    script:[
+    script: [
       {
-        src:"https://unpkg.com/vue-typer/dist/vue-typer.min.js"
+        src: "https://unpkg.com/vue-typer/dist/vue-typer.min.js"
       }
     ]
   },
@@ -63,16 +69,22 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    // '@nuxtjs/axios',
+    // '@nuxtjs/i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
-  },
+  // axios: {
+  //   // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+  //   baseURL: '/',
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+	build: {
+		loaders: {
+			css: {
+				modules: false,
+			},
+		},
+	}
 }
