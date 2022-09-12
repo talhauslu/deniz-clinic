@@ -1,5 +1,5 @@
 <script>
-import Landing from '../components/sections/about/landing.vue';
+import Landing from '../components/sections/about/Landing.vue';
 import { onMounted, onUnmounted } from 'vue'
     export default{
         components:{
