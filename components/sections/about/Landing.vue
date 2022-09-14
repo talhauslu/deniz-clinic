@@ -22,7 +22,7 @@
             </p>
         </div>
         <div class="w-full md:w-1/3 flex justify-center items-center ">
-            <nuxt-img class="animation-element fade-right w-full object-contain rounded"
+            <nuxt-img class="animation-element fade-right w-4/5 md:w-full object-contain rounded"
                 src="/deniz2-removebg-preview.png" />
         </div>
     </section>
