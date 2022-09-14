@@ -56,8 +56,8 @@ export default {
             <VueSlickCarousel class="p-4 m-4 border border-gray-300 shadow-lg rounded bg-white" :autoplay="true" :arrows="true"
                 :dots="false">
                 <div v-for="comment of comments">
-                    <h1 class="text-2xl mb-4">{{comment.author}}</h1>
                     <p class="">{{comment.tr}}</p>
+                    <h1 class="text-xl font-light mt-4 float-right">{{comment.author}}</h1>
                 </div>
             </VueSlickCarousel>
             <i class="fa-solid fa-quote-right float-right"></i>

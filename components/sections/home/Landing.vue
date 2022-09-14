@@ -14,8 +14,8 @@
                 </button>
             </div>
             <video
-                class="animation-element fade-right hidden lg:block absolute right-0 object-cover w-1/2 h-full object-center -z-10 border border-white"
-                autoplay muted loop id="myVideo">
+                class="animation-element fade-right hidden lg:block absolute right-0 object-cover w-1/2 h-full object-center -z-10 border border-white pointer-events-none"
+                autoplay muted loop playsinline id="myVideo">
                 <source src="~/assets/media/entrance_video.mp4" type="video/mp4">
             </video>
         <div class="w-full h-full block lg:hidden absolute bg-black">

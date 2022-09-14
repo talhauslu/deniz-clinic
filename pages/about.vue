@@ -1,9 +1,11 @@
 <script>
 import Landing from '../components/sections/about/Landing.vue';
+import ReachUsForm from '../components/ReachUsForm.vue';
 import { onMounted, onUnmounted } from 'vue'
     export default{
         components:{
-            Landing
+            Landing,
+            ReachUsForm
         },
         setup() {
         function isElemVisible(el) {
@@ -69,6 +71,7 @@ import { onMounted, onUnmounted } from 'vue'
 <template>
     <main>
         <Landing/>
-        LAND
+        <!-- <ReachUsForm class="w-1/2"/> -->
+        <!-- LAND -->
     </main>
 </template>
