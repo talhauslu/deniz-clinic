@@ -1,9 +1,9 @@
 
 
 <template>
-    <section class="bg-white flex flex-col-reverse md:flex-row justify-around gap-4 md:gap-0 p-4">
+    <section class="bg-white flex flex-col-reverse md:flex-row justify-around gap-8 md:gap-0 p-4">
         <div class="animation-element fade-left w-full md:w-1/2 flex flex-col justify-center gap-8 ">
-            <h1 class="font-light text-4xl ">
+            <h1 class="font-light text-4xl text-center md:text-left">
                 Uzm. Dr. Deniz Yılmaz
             </h1>
             <div class="w-full bg-gray-300 h-px">
@@ -22,7 +22,7 @@
             </p>
         </div>
         <div class="w-full md:w-1/3 flex justify-center items-center ">
-            <nuxt-img class="animation-element fade-right w-4/5 md:w-full object-contain rounded"
+            <nuxt-img class="animation-element fade-right w-3/4 md:w-full object-contain rounded"
                 src="/deniz2-removebg-preview.png" />
         </div>
     </section>
