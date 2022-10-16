@@ -1,6 +1,6 @@
 <template>
     <section class="w-full h-screen flex justify-center items-center relative">
-        <div class="animation-element fade-down w-full md:w-4/5 h-5/6 overflow-hidden relative  cursor-pointer shadow-lg">
+        <div class="animation-element fade-down w-full md:w-4/5 h-5/6 overflow-hidden relative rounded cursor-pointer shadow-lg">
             <div id="main" class="w-full h-full group bg-center">
                 <div class="z-10 bottom-0 top-0 left-0 right-0 absolute flex justify-center items-center tranisition-all duration-500  bg-black bg-opacity-40 group-hover:bg-opacity-25">
                     <span class="text-white text-3xl font-semibold">KLİNİĞİMİZ</span>

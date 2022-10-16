@@ -1,4 +1,7 @@
 <script>
+import Dropdown from '../components/Dropdown/Dropdown.vue';
+import Element from '../components/Dropdown/Element.vue';
+import Subelement from '../components/Dropdown/Subelement.vue';
 export default {
     props: {
         navbarOpen: Boolean
@@ -13,27 +16,28 @@ export default {
                 { name: "Hizmet 4", url: "/" },
                 { name: "Hizmet 5", url: "/" },
             ]
-        })
+        });
     },
     mounted() {
-        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener("scroll", this.handleScroll);
     },
     destroyed() {
-        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener("scroll", this.handleScroll);
     },
     methods: {
         handleScroll(event) {
             if (window.scrollY > 128) {
-                this.top = "hidden"
+                this.top = "hidden";
             }
             else if (window.scrollY < 64) {
-                this.top = "flex"
+                this.top = "flex";
             }
         },
         toggleNavbar() {
-            this.$emit("togglenavbar")
+            this.$emit("togglenavbar");
         }
     },
+    components: { Dropdown, Element, Subelement }
 }
 </script>
 
@@ -63,9 +67,11 @@ export default {
                     </div>
                 </div>
                 <div class="flex flex-row justify-around items-center gap-4 text-2xl text-gray-600 ">
-                    <a target="_blank" href="https://www.instagram.com/dr.denizyilmaz"><i class="fa-brands fa-instagram cursor-pointer p-2 rounded-full hover:bg-gray-200"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/dr.denizyilmaz"><i
+                            class="fa-brands fa-instagram cursor-pointer p-2 rounded-full hover:bg-gray-200"></i></a>
                     <i class="fa-brands fa-linkedin cursor-pointer p-2 rounded-full hover:bg-gray-200"></i>
-                    <a target="_blank" href="https://wa.me/+905306509433"><i class="fa-brands fa-whatsapp cursor-pointer p-2 rounded-full hover:bg-gray-200"></i></a>
+                    <a target="_blank" href="https://wa.me/+905306509433"><i
+                            class="fa-brands fa-whatsapp cursor-pointer p-2 rounded-full hover:bg-gray-200"></i></a>
                 </div>
             </div>
             <div id="sticky"
@@ -76,20 +82,24 @@ export default {
                 </NuxtLink>
 
                 <div class="hidden md:flex flex-col 1120:flex-row w-full 1120:w-auto justify-around items-center gap-8">
-                    <nav class="flex flex-row gap-8 font-bold uppercase text-gray-600 text-sm flex-wrap">
+                    <nav class="flex flex-row gap-8 font-bold text-gray-600 text-sm flex-wrap">
                         <NuxtLink to="/">ANA SAYFA</NuxtLink>
 
-                        <div class="relative group cursor-pointer">
-                            <div class=" relative flex flex-row align-center justify-center gap-2">
-                                <span>HİZMETLERİMİZ</span>
-                                <i class="fa-solid fa-sort-down"></i>
-                            </div>
-                            <div
-                                class="flex absolute invisible opacity-0 bg-white group-hover:visible group-hover:opacity-100 transition duration-400 w-80 flex-col align-center shadow-lg left-0 right-0">
-                                <span v-for="service of services"
-                                    class="p-4 hover:bg-pink-100 cursor-pointer">{{service.name}}</span>
-                            </div>
-                        </div>
+                        <Dropdown title="SERVİSLER">
+                            <Element to="/esthetic-cosmetic" :hasSubMenu="true" title="Estetik&Kozmetik Diş Hekimliği">
+                                <Subelement to="/esthetic-cosmetic/smile-design" title="Gülüş Tasarımı" />
+                                <Subelement to="/esthetic-cosmetic/porcelain-lamina" title="Porselen Lamina" />
+                                <Subelement to="/esthetic-cosmetic/porselen-inlay-onlay" title="Porselen & Inlay Onlay" />
+                                <Subelement to="/esthetic-cosmetic/dis-eti-estetigi" title="Diş Eti Estetiği" />
+                                <Subelement to="/esthetic-cosmetic/dis-beyazlatma" title="Diş Beyazlatma" />
+                                <Subelement to="/esthetic-cosmetic/zirkonyum-porselen" title="Zirkonyum Porselen Kaplama" />
+                            </Element>
+                            <Element title="Service2" />
+                            <Element title="Service3" />
+                            <Element :hasSubMenu="true" title="Service4">
+                                <Subelement title="Subservice3" />
+                            </Element>
+                        </Dropdown>
 
                         <NuxtLink to="/about">HAKKIMIZDA</NuxtLink>
                         <NuxtLink to="/blog">BLOG</NuxtLink>
@@ -115,16 +125,16 @@ export default {
 <style>
 .mobileNavButton-enter-active,
 .mobileNavButton-leave-active {
-  transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
 }
 
 .mobileNavButton-enter-from {
-  opacity: 0;
-  transform: translateY(30px);
+    opacity: 0;
+    transform: translateY(30px);
 }
 
 .mobileNavButton-leave-to {
-  opacity: 0;
-  transform: translateY(-30px);
+    opacity: 0;
+    transform: translateY(-30px);
 }
 </style>

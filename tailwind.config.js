@@ -3,6 +3,17 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      zIndex: {
+        "-10": "-10",
+        "-20": "-20",
+        "-30": "-30",
+        "-40": "-40",
+        "-50": "-50",
+        "-60": "-60",
+        "-70": "-70",
+        "-80": "-80",
+        "-90": "-90",
+      },
       minWidth: {
         "10vw": "10vw",
         "20vw": "20vw",
@@ -77,8 +88,13 @@ module.exports = {
   variants: {
     extend: {
       display: ["group-hover"],
-      visibility: ["group-hover"]
+      visibility: ["group-hover"],
+      rotate: ["group-hover"]
     }
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-scoped-groups")({
+      groups: ["one", "two"],
+    }),
+  ],
 }
