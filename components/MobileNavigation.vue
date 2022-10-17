@@ -19,11 +19,8 @@ export default {
         return ({
             submenuOpen: false,
             services: [
-                { name: "Hizmet 1", url: "/" },
-                { name: "Hizmet 2", url: "/" },
-                { name: "Hizmet 3", url: "/" },
-                { name: "Hizmet 4", url: "/" },
-                { name: "Hizmet 5", url: "/" },
+                { name: "Gülüş Tasarımı", url: "/esthetic-cosmetic/smile-design" },
+                { name: "Porselen Lamina", url: "/esthetic-cosmetic/porcelain-lamina" },
             ]
         })
     }
@@ -51,23 +48,23 @@ export default {
 
 
                 <nav class="flex flex-col font-bold uppercase text-gray-600">
-                    <NuxtLink class="border-b p-2" to="/">ANA SAYFA</NuxtLink>
+                    <NuxtLink @click.native="toggleNavbar" class="border-b p-2" to="/">ANA SAYFA</NuxtLink>
 
                     <div class="border-b p-2">
                         <span @click="toggleSubmenu" class="inline-flex flex-row items-center">HİZMETLERİMİZ <i
                                 class="fa-solid fa-sort-down inline"></i></span>
                         <transition name="submenu">
                             <div v-if="submenuOpen" class="flex flex-col">
-                                <span v-for="service of services"
-                                    class="hover:bg-pink-100 cursor-pointer p-2 border-b pl-1">{{service.name}}</span>
+                                <NuxtLink @click.native="toggleNavbar" v-for="service of services" :to="service.url" :key="service.url"
+                                    class="hover:bg-pink-100 cursor-pointer p-2 border-b pl-1">{{service.name}}</NuxtLink>
                             </div>
                         </transition>
                     </div>
 
-                    <NuxtLink class="border-b p-2" to="/about">HAKKIMIZDA</NuxtLink>
-                    <NuxtLink class="border-b p-2" to="/blog">BLOG</NuxtLink>
-                    <NuxtLink class="border-b p-2" to="/media">MEDYA</NuxtLink>
-                    <NuxtLink class="border-b p-2" to="/contact">İLETİŞİM</NuxtLink>
+                    <NuxtLink @click.native="toggleNavbar" class="border-b p-2" to="/about">HAKKIMIZDA</NuxtLink>
+                    <NuxtLink @click.native="toggleNavbar" class="border-b p-2" to="/blog">BLOG</NuxtLink>
+                    <NuxtLink @click.native="toggleNavbar" class="border-b p-2" to="/media">MEDYA</NuxtLink>
+                    <NuxtLink @click.native="toggleNavbar" class="border-b p-2" to="/contact">İLETİŞİM</NuxtLink>
                 </nav>
             </div>
 

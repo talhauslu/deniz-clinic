@@ -86,19 +86,13 @@ export default {
                         <NuxtLink to="/">ANA SAYFA</NuxtLink>
 
                         <Dropdown title="SERVİSLER">
-                            <Element to="/esthetic-cosmetic" :hasSubMenu="true" title="Estetik&Kozmetik Diş Hekimliği">
-                                <Subelement to="/esthetic-cosmetic/smile-design" title="Gülüş Tasarımı" />
-                                <Subelement to="/esthetic-cosmetic/porcelain-lamina" title="Porselen Lamina" />
-                                <Subelement to="/esthetic-cosmetic/porselen-inlay-onlay" title="Porselen & Inlay Onlay" />
-                                <Subelement to="/esthetic-cosmetic/dis-eti-estetigi" title="Diş Eti Estetiği" />
-                                <Subelement to="/esthetic-cosmetic/dis-beyazlatma" title="Diş Beyazlatma" />
-                                <Subelement to="/esthetic-cosmetic/zirkonyum-porselen" title="Zirkonyum Porselen Kaplama" />
-                            </Element>
-                            <Element title="Service2" />
-                            <Element title="Service3" />
-                            <Element :hasSubMenu="true" title="Service4">
-                                <Subelement title="Subservice3" />
-                            </Element>
+                            <!-- <Element to="/esthetic-cosmetic" title="Estetik&Kozmetik Diş Hekimliği" /> -->
+                            <Element to="/esthetic-cosmetic/smile-design" title="Gülüş Tasarımı" />
+                            <Element to="/esthetic-cosmetic/porcelain-lamina" title="Porselen Lamina" />
+                            <!-- <Element to="/esthetic-cosmetic/porselen-inlay-onlay" title="Porselen & Inlay Onlay" />
+                            <Element to="/esthetic-cosmetic/dis-eti-estetigi" title="Diş Eti Estetiği" />
+                            <Element to="/esthetic-cosmetic/dis-beyazlatma" title="Diş Beyazlatma" />
+                            <Element to="/esthetic-cosmetic/zirkonyum-porselen" title="Zirkonyum Porselen Kaplama" /> -->
                         </Dropdown>
 
                         <NuxtLink to="/about">HAKKIMIZDA</NuxtLink>

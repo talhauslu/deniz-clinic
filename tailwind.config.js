@@ -93,8 +93,5 @@ module.exports = {
     }
   },
   plugins: [
-    require("tailwindcss-scoped-groups")({
-      groups: ["one", "two"],
-    }),
   ],
 }

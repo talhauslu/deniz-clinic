@@ -15,8 +15,8 @@ export default {
 
 <template>
     <div @mouseenter="submenuOpen = true" @mouseleave="submenuOpen = false"
-        class="relative p-4 bg-white hover:bg-pink-100 cursor-pointer w-60">
-        <NuxtLink :to="to" :class="{'justify-between':hasSubMenu}" class="flex flex-row w-full items-center">
+        class="relative bg-white hover:bg-pink-100 cursor-pointer w-60">
+        <NuxtLink :to="to" :class="{'justify-between':hasSubMenu}" class="flex flex-row w-full h-full p-4 items-center">
             <span >{{title}}</span>
             <i v-if="hasSubMenu" class="fa-solid fa-sort-up transform rotate-90"></i>
         </NuxtLink>
