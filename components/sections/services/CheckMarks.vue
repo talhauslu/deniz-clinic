@@ -1,8 +1,8 @@
 <script>
 export default{
     props:{
-        heading:{type:String, required:true, default:"Heading"},
-        content:{type:Array, required:true, default:[
+        heading:{type:String, required:false, default:"Heading"},
+        content:{type:Array, required:false, default:[
             {icon_class:"", subheading:"subheading", content:"content content content content content"},
             {icon_class:"", subheading:"subheading", content:"content content content content content"},
             {icon_class:"", subheading:"subheading", content:"content content content content content"},
