@@ -87,11 +87,12 @@ export default {
 
                         <Dropdown title="SERVİSLER">
                             <!-- <Element to="/esthetic-cosmetic" title="Estetik&Kozmetik Diş Hekimliği" /> -->
-                            <Element to="/esthetic-cosmetic/smile-design" title="Gülüş Tasarımı" />
-                            <Element to="/esthetic-cosmetic/porcelain-lamina" title="Porselen Lamina" />
+                            <Element to="/smile-design" title="Gülüş Tasarımı" />
+                            <Element to="/porcelain-lamina" title="Porselen Lamina" />
+                            <Element to="/tooth-whitening" title="Diş Beyazlatma" />
                             <!-- <Element to="/esthetic-cosmetic/porselen-inlay-onlay" title="Porselen & Inlay Onlay" />
                             <Element to="/esthetic-cosmetic/dis-eti-estetigi" title="Diş Eti Estetiği" />
-                            <Element to="/esthetic-cosmetic/dis-beyazlatma" title="Diş Beyazlatma" />
+                            
                             <Element to="/esthetic-cosmetic/zirkonyum-porselen" title="Zirkonyum Porselen Kaplama" /> -->
                         </Dropdown>
 

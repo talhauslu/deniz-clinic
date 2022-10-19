@@ -1,13 +1,13 @@
 <script>
-import Landing from '../../components/sections/services/Landing.vue';
-import Animatable from '../../components/animation/animatable.vue';
-import Introduction from '../../components/sections/services/Introduction.vue';
-import CheckMarks from '../../components/sections/services/CheckMarks.vue';
-import ShortDescription from '../../components/sections/services/ShortDescription.vue';
-import Description from '../../components/sections/services/Description.vue';
-import ReachUsForm from '../../components/ReachUsForm.vue';
-import ReachUs from '../../components/ReachUs.vue';
-import QandA from '../../components/sections/services/QandA.vue';
+import Landing from '../components/sections/services/Landing.vue';
+import Animatable from '../components/animation/animatable.vue';
+import Introduction from '../components/sections/services/Introduction.vue';
+import CheckMarks from '../components/sections/services/CheckMarks.vue';
+import ShortDescription from '../components/sections/services/ShortDescription.vue';
+import Description from '../components/sections/services/Description.vue';
+import ReachUsForm from '../components/ReachUsForm.vue';
+import ReachUs from '../components/ReachUs.vue';
+import QandA from '../components/sections/services/QandA.vue';
 export default {
     components: { Landing, Animatable, Introduction, CheckMarks, ShortDescription, Description, ReachUs, QandA }
 }
@@ -28,7 +28,6 @@ export default {
             'Ön dişlerdeki ufak çapraşıkların ve simetri sorunlarının düzeltilmesi için',
             'Uzun yıllar ortodontik tedavi görmek istenilmeyen durumlar için'
             ]}]" />
-        <CheckMarks />
         <ShortDescription
             content="Laminalar iyi ve doğru bir ağız bakımıyla yıllarca sorunsuz olarak kullanılabilirler. Bunu da sebebi diğer yapıştırma sistemlerden daha üstün özelliklere sahip porselenden imal edilmiş olmalarıdır. Lekelenme ve aşınmaya karşı dirençlidirler. Ömürlerini uzatmak için ağız bakımına dikkat etmek gerekir."
             heading="Porselen Lamina & Laminate Veneers" />

@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <section class="flex flex-col-reverse md:flex-row p-4 justify-around gap-8 md:gap-0 bg-gray-100 z-10">
+    <section class="flex flex-col-reverse md:flex-row p-4 justify-around gap-8 md:gap-0 bg-white z-10">
         <div class="flex flex-col justify-evenly gap-8 md:gap-0 w-full md:w-1/2">
 
             <h1 class="text-4xl font-semibold text-gray-800">{{heading}}</h1>

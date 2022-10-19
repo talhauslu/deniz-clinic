@@ -1,5 +1,5 @@
 <template>
-    <footer class="text-gray-700 border-t shadow-lg z-50 relative">
+    <footer class="text-gray-700 border-t shadow-lg z-40 relative">
         <div class="py-8 flex flex-col 500:flex-row gap-8 500:gap-0 justify-around w-full flex-wrap">
             <div class="flex flex-col gap-6 px-4">
                 <h1 class="text-2xl font-bold">İletişim</h1>

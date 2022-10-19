@@ -36,7 +36,7 @@ export default {
 </script>
 
 <template>
-    <section class="flex flex-col bg-gray-50 rounded border w-4/5 self-center shadow m-4 p-8 cursor-pointer">
+    <section class="flex flex-col bg-gray-50 rounded border w-full  md:w-4/5 self-center shadow m-4 p-8 cursor-pointer">
         <h1 class="text-3xl text-center mb-4">Sık sorulan sorular</h1>
         <div v-for="qa in local_qas" @click="toggleQA(qa.q)" :key="qa.q" class="flex flex-col gap-4 border-b p-8">
             <h1 class="text-xl font-semibold flex flex-row w-full justify-between">

@@ -19,8 +19,9 @@ export default {
         return ({
             submenuOpen: false,
             services: [
-                { name: "Gülüş Tasarımı", url: "/esthetic-cosmetic/smile-design" },
-                { name: "Porselen Lamina", url: "/esthetic-cosmetic/porcelain-lamina" },
+                { name: "Gülüş Tasarımı", url: "/smile-design" },
+                { name: "Porselen Lamina", url: "/porcelain-lamina" },
+                { name: "Diş Beyazlatma", url: "/tooth-whitening" },
             ]
         })
     }
@@ -29,9 +30,9 @@ export default {
 
 <template>
     <transition name="mobileNav">
-        <div v-if="open" class="w-screen h-screen overflow-y-auto fixed z-50 top-0 bottom-0  right-0 ">
+        <div v-if="open" class="w-screen h-screen overflow-y-auto fixed z-50 top-0 bottom-0 bg-white right-0 ">
 
-            <div class="w-full h-full relative flex flex-col justify-evenly bg-white p-4 px-8 gap-4">
+            <div class="w-full h-full relative flex flex-col justify-evenly p-4 px-8 gap-4">
 
                 <i @click="toggleNavbar" class="fa-solid fa-x block text-3xl absolute right-4 top-4"></i>
 
@@ -51,12 +52,12 @@ export default {
                     <NuxtLink @click.native="toggleNavbar" class="border-b p-2" to="/">ANA SAYFA</NuxtLink>
 
                     <div class="border-b p-2">
-                        <span @click="toggleSubmenu" class="inline-flex flex-row items-center">HİZMETLERİMİZ <i
+                        <span @click="toggleSubmenu" class="inline-flex flex-row items-center"><span>HİZMETLERİMİZ</span> <i
                                 class="fa-solid fa-sort-down inline"></i></span>
                         <transition name="submenu">
                             <div v-if="submenuOpen" class="flex flex-col">
                                 <NuxtLink @click.native="toggleNavbar" v-for="service of services" :to="service.url" :key="service.url"
-                                    class="hover:bg-pink-100 cursor-pointer p-2 border-b pl-1">{{service.name}}</NuxtLink>
+                                    class="hover:bg-pink-100 cursor-pointer p-2 pl-1">• {{service.name}}</NuxtLink>
                             </div>
                         </transition>
                     </div>
@@ -92,7 +93,7 @@ export default {
 
 .submenu-enter,
 .submenu-leave-to {
-    height: 0;
+    transform:scaleY(0);
     opacity: 0
 }
 
@@ -103,7 +104,7 @@ export default {
 
 .submenu-enter-to,
 .submenu-leave-from {
-    height: auto;
+    transform:scaleY(1);
     opacity: 1
 }
 </style>
