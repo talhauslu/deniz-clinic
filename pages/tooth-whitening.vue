@@ -20,7 +20,7 @@ export default {
             content="Diş beyazlatma dişlerin rengini açma işlemidir. Genetik ya da çeşitli nedenlerle diş minesinin rengi değişir. Diş beyazlatma dişin içindeki kromojenlerin kimyasal olarak değişmesidir.
         Dişlerin yüzeyindeki mine yapısında oluşan renkli organik ve inorganik maddelerin diş beyazlatma jelleri ile giderildiği kozmetik bir çözümdür."
             image="/man-holding-mockup-teeth.jpg" />
-        <Description image="/dentist-table.jpg" :left="true" heading="Diş beyazlatma kalıcı mıdır?"
+        <Description image="/dentist-table.jpg" :left="false" heading="Diş beyazlatma kalıcı mıdır?"
             :content="[
             {list:false, texts:['Kalıcı diş beyazlatma işlemi, çeşitli nedenlerle renk değiştirmiş ve sararmış dişlerin rengini açmak için uygulanmaktadır. Diş beyazlatma kalıcı mıdır? Sorusunun cevabı ise pek çok farklı etkene bağlıdır. Kişinin diş ve mine, dentin yapısı (diş alt rengi), kullandığı ilaçlar, kahve ve sigara kullanımı ile ağız hijyen ve bakımına temizliğine özen gösterme durumunda bağlı olarak diş beyazlatmanın kalıcılığı değişecektir. Kalıcı diş beyazlatma sürecinde kişilere büyük görev düşmektedir.', 'Kalıcı diş beyazlatma istendiğinde mutlaka lazerle tedavi seçeneği tercih edilmelidir. Diş beyazlatma işlemi için uzman estetik diş hekimlerinden destek almalısınız.']},]" />
         <CheckMarks :content="[

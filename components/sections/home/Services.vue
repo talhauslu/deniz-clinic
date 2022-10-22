@@ -3,15 +3,15 @@ export default {
     data() {
         return ({
             services: [
-                { icon: "fa-solid fa-tooth", header: "DENTAL IMPLANTS", link: "" },
-                { icon: "fa-solid fa-tooth", header: "CROWNS", link: "" },
-                { icon: "fa-solid fa-tooth", header: "INVISALIGN", link: "" },
-                { icon: "fa-solid fa-tooth", header: "GUM TREATMENT", link: "" },
-                { icon: "fa-solid fa-tooth", header: "RESTORATIONS", link: "" },
-                { icon: "fa-solid fa-tooth", header: "DENTAL CARES", link: "" },
-                { icon: "fa-solid fa-tooth", header: "CAD/CAM", link: "" },
-                { icon: "fa-solid fa-tooth", header: "ALIGN", link: "" },
-                { icon: "fa-solid fa-tooth", header: "VENEERS", link: "" },
+                { icon: "fa-solid fa-tooth", header: "ESTETİK & KOZMETİK DİŞ HEKİMLİĞİ", link: "" },
+                { icon: "fa-solid fa-tooth", header: "GÜLÜŞ TASARIMI", link: "/smile-design" },
+                { icon: "fa-solid fa-tooth", header: "PORSELEN LAMİNA & LAMİNATE VENEER", link: "" },
+                { icon: "fa-solid fa-tooth", header: "PORSELEN & INLAY ONLAY", link: "/porcelain-laminate" },
+                { icon: "fa-solid fa-tooth", header: "DİŞ ETİ ESTETİĞİ", link: "" },
+                { icon: "fa-solid fa-tooth", header: "DİŞ BEYAZLATMA", link: "/tooth-whitening" },
+                { icon: "fa-solid fa-tooth", header: "ZİRKONYUM PORSELEN KAPLAMA", link: "" },
+                { icon: "fa-solid fa-tooth", header: "SERVİS1", link: "" },
+                { icon: "fa-solid fa-tooth", header: "SERVİS2", link: "" },
             ]
         })
     }
@@ -23,11 +23,11 @@ export default {
         <h1 class="text-3xl font-extralight">Servislerimiz</h1>
         <div  class="w-full md:w-4/5 h-full shadow-md bg-right sm:bg-center bg-blue-300" id="services">
             <div class="animation-element fade-up w-full h-full text-white flex flex-row flex-wrap">
-                <div v-for="service in services"
+                <NuxtLink v-for="service in services" :to="service.link" :key="service.header"
                     class="text-3xl sm:text-5xl h-44 sm:h-52 w-1/2 sm:w-1/3 border bg-black bg-opacity-30 hover:bg-opacity-0 transition-all border-white border-opacity-10 flex flex-col justify-center items-center cursor-pointer">
                     <i :class="service.icon" class="text-xl sm:text-3xl"></i>
                     <h1 class="text-xl select-none">{{service.header}}</h1>
-                </div>
+                </NuxtLink>
             </div>
         </div>
     </section>

@@ -46,17 +46,17 @@ export default {
         <div class="w-full flex flex-col items-center justify-around md:flex-row p-4 md:p-14">
             <nuxt-img class="object-contain w-2/3 md:w-5/12 rounded-xl shadow-lg" src="/veneers.png" />
             <div class="animation-element fade-right w-full md:w-1/2 flex flex-col gap-10 justify-around p-2 py-8 sm:p-8 md:p-4 ">
-                <h1 class="text-6xl">Dental Veneers</h1>
+                <h1 class="text-6xl">Porselen Lamina</h1>
                 <h2 class="text-4xl text-gray-800">Daha
                     <span class="text-blue-400">{{ current }}|</span>
                 </h2>
                 <span>Veneers hakkında teknik olmayan kısa bir açıklama. Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Accusamus quos asperiores nemo dolore. Saepe iure sit minus optio omnis nihil quas
                     ipsam, repellendus laudantium quod. Veritatis dolorem officiis neque nihil!</span>
-                <button
+                <NuxtLink to="/porcelain-laminate"
                     class="inline self-start p-4 rounded-lg bg-gray-600 font-semibold border text-white hover:bg-opacity-50 transition-all shadow-md">
                     Daha fazlası
-                </button>
+                </NuxtLink>
             </div>
         </div>
     </section>

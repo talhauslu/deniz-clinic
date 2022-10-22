@@ -55,8 +55,8 @@ export default {
                 <div class="flex flex-row justify-around items-center gap-2">
                     <i class="fa-solid fa-clock text-4xl text-pink-200"></i>
                     <div class="text-sm flex flex-col flex-around">
-                        <span class="font-semibold">Monday - Friday</span>
-                        <span>9 AM - 5 PM</span>
+                        <span class="font-semibold">Pazartesi - Cuma</span>
+                        <span>09:00 - 17:00</span>
                     </div>
                 </div>
                 <div class="flex flex-row justify-around items-center gap-2">
@@ -87,8 +87,9 @@ export default {
 
                         <Dropdown title="SERVİSLER">
                             <!-- <Element to="/esthetic-cosmetic" title="Estetik&Kozmetik Diş Hekimliği" /> -->
+                            <Element to="/esthetic-cosmetic" title="Estetik & Kozmetik Diş Hekimliği" />
                             <Element to="/smile-design" title="Gülüş Tasarımı" />
-                            <Element to="/porcelain-lamina" title="Porselen Lamina" />
+                            <Element to="/porcelain-laminate" title="Porselen Lamina" />
                             <Element to="/tooth-whitening" title="Diş Beyazlatma" />
                             <!-- <Element to="/esthetic-cosmetic/porselen-inlay-onlay" title="Porselen & Inlay Onlay" />
                             <Element to="/esthetic-cosmetic/dis-eti-estetigi" title="Diş Eti Estetiği" />
