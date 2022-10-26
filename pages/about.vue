@@ -1,6 +1,6 @@
 <script>
 import Description from '../components/sections/about/Description.vue';
-import ReachUsForm from '../components/ReachUsForm.vue';
+import ReachUs from '../components/ReachUs.vue';
 import { onMounted, onUnmounted } from 'vue'
 import Animatable from '../components/animation/animatable.vue';
 import Landing from '../components/sections/about/Landing.vue';
@@ -8,7 +8,7 @@ import TeamMember from '../components/sections/about/TeamMember.vue';
 export default {
     components: {
     Description,
-    ReachUsForm,
+    ReachUs,
     Animatable,
     Landing,
     TeamMember
@@ -25,7 +25,7 @@ export default {
         <TeamMember/>
         <TeamMember/>
         <TeamMember/>
-        <!-- <ReachUsForm class="w-1/2"/> -->
+        <ReachUs />
         <!-- LAND -->
     </Animatable>
 </template>

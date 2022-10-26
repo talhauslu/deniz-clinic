@@ -9,7 +9,7 @@ export default {
 
 <template>
     <section class="w-full flex justify-center items-center p-4">
-        <div id="texture" class="w-full md:w-4/5 flex flex-col md:flex-row justify-center p-4  shadow-lg">
+        <div id="texture" class="w-full md:w-4/5 flex flex-col md:flex-row justify-center p-4 bg-white shadow-lg">
             <div class="animation-element fade-left w-full md:w-1/2 flex items-center justify-center ">
                 <ReachUsForm class="w-full md:w-4/5 h-full" />
             </div>
@@ -24,8 +24,8 @@ export default {
 </template>
 
 <style scoped> 
-    #texture{
+    /* #texture{
 background-color: #ffffff;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ff75fc' fill-opacity='0.41' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-    }
+    } */
 </style>

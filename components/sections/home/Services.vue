@@ -3,10 +3,10 @@ export default {
     data() {
         return ({
             services: [
-                { icon: "fa-solid fa-tooth", header: "ESTETİK & KOZMETİK DİŞ HEKİMLİĞİ", link: "" },
+                { icon: "fa-solid fa-tooth", header: "ESTETİK & KOZMETİK DİŞ HEKİMLİĞİ", link: "/esthetic-cosmetic" },
                 { icon: "fa-solid fa-tooth", header: "GÜLÜŞ TASARIMI", link: "/smile-design" },
-                { icon: "fa-solid fa-tooth", header: "PORSELEN LAMİNA & LAMİNATE VENEER", link: "" },
-                { icon: "fa-solid fa-tooth", header: "PORSELEN & INLAY ONLAY", link: "/porcelain-laminate" },
+                { icon: "fa-solid fa-tooth", header: "PORSELEN LAMİNA & LAMİNATE VENEER", link: "/porcelain-laminate" },
+                { icon: "fa-solid fa-tooth", header: "PORSELEN & INLAY ONLAY", link: "/inlay-onlay" },
                 { icon: "fa-solid fa-tooth", header: "DİŞ ETİ ESTETİĞİ", link: "" },
                 { icon: "fa-solid fa-tooth", header: "DİŞ BEYAZLATMA", link: "/tooth-whitening" },
                 { icon: "fa-solid fa-tooth", header: "ZİRKONYUM PORSELEN KAPLAMA", link: "" },
