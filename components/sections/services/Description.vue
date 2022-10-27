@@ -16,7 +16,7 @@ export default {
 
 <template>
     <section :class="{'flex-col md:flex-row':left, 'flex-col-reverse md:flex-row-reverse':!left}"
-        class="flex gap-4 bg-gray-50 p-2 md:p-8 justify-around">
+        class="flex bg-gray-50 justify-around">
         <div :class="{'fade-left':left, 'fade-right':!left}"
             class="w-full md:w-1/2 flex flex-col justify-center gap-8 p-8 animation-element">
             <span>
@@ -39,6 +39,6 @@ export default {
             </div>
         </div>
         <nuxt-img :class="{'fade-right':left, 'fade-left':!left}"
-            class="w-full md:w-2/5 rounded object-cover animation-element" :src="image" />
+            class="w-full md:w-1/2 h-40vw rounded object-cover animation-element" :src="image" />
     </section>
 </template>
