@@ -15,12 +15,12 @@ export default {
 
 <template>
     <Animatable>
-        <Landing image="/whitening-concept-dental-care-implants-veneers-wom-AZ5LGPE.webp"
+        <Landing image="/porcelain-lamina-landing.jpg"
             title="PORSELEN LAMİNA & LAMINATE VENEERS" />
         <Introduction class="b" heading="Daha doğal, daha beyaz."
             content="Laminate Veneer restorasyonlar, Dişlerin sadece ön yüzeylerinden minimal (0.3-0.7 mm) aşındırmalar yaparak, bazı zamanlar ise hiç aşındırma yapmadan sadece ölçü alınarak bu alanlara çok ince porselen diş laminalarının yapıştırılması işlemidir. Yaprak porselen dişler, estetik, güvenli, diş eti irritasyonu yaratma riski az ve konservatif bir tedavidir. Çok ince olmaları sebebiyle ışığın geçirgenliğine izin verirler. Bu nedenle, dişler doğal görünebilmektedir."
             image="/dental-crown.jpg" />
-        <Description image="/set-of-veneers-for-tone-selection-9AAMZ4L.webp" :left="false"
+        <Description image="/dentist-table.jpg" :left="false"
             heading="Laminate Veneer kimlere uygulanır?" :content="[
             {list:true, texts:['Beyazlatma işlemlerinden sonuç alınamadığı ileri derecede renk değiştirmiş dişlere estetik görünüm kazandırmak için',
             'Aşınmış, yapısal formu bozulmuş dişlerin estetik görünümüne kavuşturulması için',

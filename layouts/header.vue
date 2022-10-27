@@ -91,6 +91,7 @@ export default {
                             <Element to="/smile-design" title="Gülüş Tasarımı" />
                             <Element to="/porcelain-laminate" title="Porselen Lamina" />
                             <Element to="/tooth-whitening" title="Diş Beyazlatma" />
+                            <Element to="/zirconium-crowns" title="Zirkonyum Porselen Kaplama" />
                             <!-- <Element to="/esthetic-cosmetic/porselen-inlay-onlay" title="Porselen & Inlay Onlay" />
                             <Element to="/esthetic-cosmetic/dis-eti-estetigi" title="Diş Eti Estetiği" />
                             

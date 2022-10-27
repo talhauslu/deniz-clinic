@@ -23,6 +23,7 @@ export default {
                 { name: "Gülüş Tasarımı", url: "/smile-design" },
                 { name: "Porselen Lamina", url: "/porcelain-laminate" },
                 { name: "Diş Beyazlatma", url: "/tooth-whitening" },
+                { name: "Zirkonyum Porselen Kaplama", url: "/zirconium-crowns" },
             ]
         })
     }
