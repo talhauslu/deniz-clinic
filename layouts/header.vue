@@ -51,7 +51,7 @@ export default {
     <header
         class="z-50 h-10vh shadow sticky top-0 flex flex-row sm:gap-4 md:gap-8 w-full justify-between sm:justify-center px-6 py-2 items-center bg-white font-semibold text-gray-700 text-lg ">
 
-        <nav class="hidden sm:flex flex-row sm:gap-4 md:gap-8 ">
+        <nav class="hidden sm:flex flex-row sm:gap-4 md:gap-8 flex-1 justify-end">
             <NuxtLink to="/">ANA SAYFA</NuxtLink>
 
             <Dropdown title="SERVİSLER">
@@ -66,7 +66,7 @@ export default {
             <nuxt-img src="/logo-removebg-preview.png" class="object-contain h-full w-full" />
         </NuxtLink>
 
-        <nav class="hidden sm:flex flex-row sm:gap-4 md:gap-8">
+        <nav class="flex-1 hidden sm:flex flex-row sm:gap-4 md:gap-8 justify-start">
 
             <NuxtLink to="/blog">BLOG</NuxtLink>
             <NuxtLink to="/media">MEDYA</NuxtLink>

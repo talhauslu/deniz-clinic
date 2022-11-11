@@ -25,10 +25,6 @@ export default {
                     qa.visible = !qa.visible
                     return qa
                 }
-                else {
-                    qa.visible = false
-                    return qa
-                }
             })
         }
     }

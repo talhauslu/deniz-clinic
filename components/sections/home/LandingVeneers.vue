@@ -1,5 +1,9 @@
 <script>
+import TypeWriter from './../../TypeWriter.vue'
 export default {
+    components:{
+        TypeWriter
+    },
     data() {
         return ({
             words: ["beyaz", "doğal"],
@@ -36,12 +40,14 @@ export default {
 
 <template>
 
-    <section class="animation-element w-full flex flex-col items-center justify-around md:flex-row bg-shift-wb text-white h-90vh relative">
-        <nuxt-img class="animation-element fade-left object-cover w-1/2 shadow-lg" src="/veneers.png" />
-        <div class="animation-element fade-right w-1/2 flex flex-col gap-12 justify-around p-8">
+    <section class="animation-element w-full flex flex-col items-center justify-around md:flex-row bg-shift-wb text-white md:h-90vh gap-4 md:gap-0 p-8 md:p-0 relative">
+        <nuxt-img class="animation-element fade-left object-cover w-4/5 md:w-1/2 shadow-lg" src="/veneers.png" />
+        <div class="animation-element fade-right w-full md:w-1/2 flex flex-col gap-4 md:gap-12 justify-around md:p-8">
             <h1 class="text-6xl">Porselen Lamina</h1>
-            <h2 class="text-4xl text-gray-400">Daha
-                <span class="text-blue-100">{{ current }}|</span>
+            <h2 class="text-4xl flex flex-col sm:flex-row gap-1 text-gray-400">
+                <span>Daha</span> <span> </span>
+                <TypeWriter class="text-blue-100" :speed="100" :delay="500"
+                    :words="['beyaz','doğal']" />
             </h2>
             <span>Veneers hakkında teknik olmayan kısa bir açıklama. Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Accusamus quos asperiores nemo dolore. Saepe iure sit minus optio omnis nihil quas
