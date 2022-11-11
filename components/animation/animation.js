@@ -19,7 +19,12 @@ function updateClasses(animatables) {
             }
             else if (elem.className.includes("fade-down")) {
                 elem.className = elem.className.replace("transform translate-y-10 opacity-0", "transform translate-y-0 opacity-100")
-
+            }
+            else if (elem.className.includes("bg-shift-wb")) {
+                elem.className = elem.className.replace("bg-white", "bg-black")
+            }
+            else if (elem.className.includes("bg-shift-bw")) {
+                elem.className = elem.className.replace("bg-black", "bg-white")
             }
         }
     }
@@ -38,6 +43,12 @@ function setInitialClasses(animatables) {
         }
         else if (elem.className.includes("fade-down")) {
             elem.className = elem.className + " transform translate-y-10 opacity-0 transition-all duration-700"
+        }
+        else if (elem.className.includes("bg-shift-wb")) {
+            elem.className = elem.className + " bg-white duration-1000"
+        }
+        else if (elem.className.includes("bg-shift-bw")) {
+            elem.className = elem.className + " bg-black duration-1000"
         }
     }
 }

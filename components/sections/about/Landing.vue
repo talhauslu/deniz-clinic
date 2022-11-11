@@ -8,7 +8,7 @@ export default{
 </script>
 
 <template>
-    <section class="w-full h-80vh relative">
+    <section class="w-full h-90vh relative">
         <nuxt-img class="w-full h-full object-cover absolute" src="/services_background.webp" />
         <div
             class="animation-element fade-up  w-full h-full flex flex-col justify-center items-center relative text-white bg-black bg-opacity-60">

@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-    <main class="bg-blue-50">
+    <main class="bg-white">
         <Header :navbarOpen="navbarOpen"  @togglenavbar="toggleNavbar"/>
         <MobileNavigation @togglenavbar="toggleNavbar" :open="navbarOpen"/>
         <Nuxt />

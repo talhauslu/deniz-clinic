@@ -24,6 +24,8 @@ export default {
                 { name: "Porselen Lamina", url: "/porcelain-laminate" },
                 { name: "Diş Beyazlatma", url: "/tooth-whitening" },
                 { name: "Zirkonyum Porselen Kaplama", url: "/zirconium-crowns" },
+                { name: "İnlay & Onlay", url: "/inlay-onlay" },
+                { name: "Diş Eti Estetiği", url: "/gum-esthetic" },
             ]
         })
     }
@@ -61,7 +63,7 @@ export default {
                             <div v-if="submenuOpen" class="flex flex-col">
                                 <NuxtLink @click.native="toggleNavbar" v-for="service of services" :to="service.url"
                                     :key="service.url" class="hover:bg-pink-100 cursor-pointer p-2 pl-1">•
-                                    {{service.name}}</NuxtLink>
+                                    {{ service.name }}</NuxtLink>
                             </div>
                         </transition>
                     </div>

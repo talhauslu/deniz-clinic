@@ -73,7 +73,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     // '@nuxtjs/axios',
-    // '@nuxtjs/i18n',
+     '@nuxtjs/i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -81,7 +81,23 @@ export default {
   //   // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
   //   baseURL: '/',
   // },
-
+    i18n: {
+    locales: [
+      {
+        code: 'en',
+        name:"English",
+        file: 'en.json'
+      },
+      {
+        code:"tr",
+        name:"Türkçe",
+        file:"tr.json"
+      }
+    ],
+    lazy: true,
+    langDir: 'lang/',
+    defaultLocale: 'tr'
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {
 		loaders: {

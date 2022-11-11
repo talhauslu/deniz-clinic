@@ -33,11 +33,12 @@ export default {
 </script>
 
 <template>
-    <section class="flex flex-col md:flex-row justify-around items-center p-4">
+    <section class="animation-element flex flex-col md:flex-row justify-around items-center p-4 bg-shift-wb text-white relative">
+        <nuxt-img class="hidden md:block absolute left-0 top-0 transform -rotate-90" src="/dots-corner.png"></nuxt-img>
         <div class="flex flex-col items-center justify-center w-full md:w-1/2">
             <div class="animation-element fade-left flex flex-col items-center justify-around gap-8 text-4xl text-center">
                 <i class="fa-solid fa-message"></i>
-                <h1 class="">Hastalarımızın geri dönüşleri bizim için çok önemli</h1>
+                <h1 class="">Geri dönüşlerinizi önemsiyoruz</h1>
                 <span class="text-sm">
                     <span class="text-yellow-400 text-center">
                         <i class="fa-solid fa-star"></i>
@@ -53,7 +54,7 @@ export default {
         </div>
         <div class="animation-element fade-right w-full md:w-1/3 p-4">
             <i class="fa-solid fa-quote-left self-start"></i>
-            <VueSlickCarousel class="p-4 m-4 border border-gray-300 shadow-lg rounded bg-white" :autoplay="true" :arrows="true"
+            <VueSlickCarousel class="p-4 m-4 border border-gray-300 shadow-lg rounded bg-white text-black" :autoplay="true" :arrows="true"
                 :dots="false">
                 <div v-for="comment of comments">
                     <p class="">{{comment.tr}}</p>

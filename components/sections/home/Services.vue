@@ -20,11 +20,14 @@ export default {
 
 <template>
     <section class="w-full my-4 flex flex-col justify-center items-center py-3 gap-8">
-        <h1 class="text-3xl font-extralight">Servislerimiz</h1>
+        <div>
+            <h1 class="text-5xl text-gray-800 font-light">Servislerimizi keşfedin</h1>
+            <div class="w-full h-0.5 bg-gray-800 mt-2 shadow"></div>
+        </div>
         <div  class="w-full md:w-4/5 h-full shadow-md bg-right sm:bg-center bg-blue-300" id="services">
             <div class="animation-element fade-up w-full h-full text-white flex flex-row flex-wrap">
                 <NuxtLink v-for="service in services" :to="service.link" :key="service.header"
-                    class="text-3xl sm:text-5xl h-44 sm:h-52 w-1/2 sm:w-1/3 border bg-black bg-opacity-30 hover:bg-opacity-0 transition-all border-white border-opacity-10 flex flex-col justify-center items-center cursor-pointer">
+                    class="text-3xl sm:text-5xl h-44 sm:h-52 w-1/2 sm:w-1/3 border bg-black bg-opacity-50 hover:bg-opacity-0 transition-all border-white border-opacity-10 flex flex-col justify-center items-center cursor-pointer">
                     <i :class="service.icon" class="text-xl sm:text-3xl"></i>
                     <h1 class="text-xl select-none">{{service.header}}</h1>
                 </NuxtLink>

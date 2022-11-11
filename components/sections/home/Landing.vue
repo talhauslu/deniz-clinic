@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <section class="flex flex-row w-full overflow-hidden relative justify-between h-80vh min-h-80vh">
+    <section class="flex flex-row w-full overflow-hidden relative justify-between h-90vh min-h-80vh">
         <div
             class="animation-element fade-left flex flex-col justify-between 500:justify-around sm:justify-center sm:gap-8 w-full sm:w-1/2 h-full p-2 sm:p-8 z-10">
             <h1 class="text-white lg:text-gray-600 font-semibold">Sağlıkta dönüşümü keşfet</h1>

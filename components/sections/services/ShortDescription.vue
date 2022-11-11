@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-    <section class="relative ">
+    <section class="relative my-8 shadow-xl">
         <div class="animation-element fade-up flex flex-col justify-around gap-6 text-center z-10 relative bg-black bg-opacity-70 w-full h-full py-16 px-4 sm:px-8 md:px-12 lg:px-16 text-white">
             <div class="flex justify-center items-center">
                 <i class="fa-solid fa-gem text-6xl sm:text-4xl text-pink-400"></i>

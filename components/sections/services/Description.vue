@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-    <section :class="{'flex-col md:flex-row':left, 'flex-col-reverse md:flex-row-reverse':!left}"
+    <section :class="{'flex-col-reverse md:flex-row':left, 'flex-col-reverse md:flex-row-reverse':!left}"
         class="flex bg-gray-50 justify-around">
         <div :class="{'fade-left':left, 'fade-right':!left}"
             class="w-full md:w-1/2 flex flex-col justify-center gap-8 p-8 animation-element">
