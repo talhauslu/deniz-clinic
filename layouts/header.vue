@@ -4,7 +4,7 @@ import Element from '../components/Dropdown/Element.vue';
 import Subelement from '../components/Dropdown/Subelement.vue';
 export default {
     props: {
-        navbarOpen: Boolean
+        navbarOpen: { type: Boolean },
     },
     data() {
         return ({
@@ -74,6 +74,18 @@ export default {
             <!-- <select>
                 <option value="tr">Turkish</option>
             </select> -->
+            <div class="group absolute float-right right-8 flex flex-col items-center gap-4">
+                <i class="fa-solid fa-globe hidden sm:flex text-xl cursor-pointer" name="language-popup"></i>
+                <div class="absolute hidden group-hover:flex flex-col bg-white text-black items-center top-7 text-lg border shadow rounded-sm">
+
+                    <span :class="{ 'bg-yellow-300': language.code === $i18n.locale }"
+                        class="p-0.5 w-full hover:bg-yellow-200 cursor-pointer select-none"
+                        v-for="language in $i18n.locales" :key="language.name">
+                        <NuxtLink :to="switchLocalePath(language.code)">{{ language.name }}</NuxtLink>
+                    </span>
+
+                </div>
+            </div>
         </nav>
 
 

@@ -8,8 +8,9 @@ import Description from '../components/sections/services/Description.vue';
 import ReachUsForm from '../components/ReachUsForm.vue';
 import ReachUs from '../components/ReachUs.vue';
 import QandA from '../components/sections/services/QandA.vue';
+import BeforeAfter from '../components/BeforeAfter.vue';
 export default {
-    components: { Landing, Animatable, Introduction, CheckMarks, ShortDescription, Description, ReachUs, QandA }
+    components: { Landing, Animatable, Introduction, CheckMarks, ShortDescription, Description, ReachUs, QandA, BeforeAfter}
 }
 </script>
 
@@ -35,6 +36,7 @@ export default {
         <QandA :qas="[
             {q:'Diş beyazlatmayı ne kadar aralıklarla yaptırabilirim ?', a:'Dişlerin tekrar eski renklerine dönmeden 6 ayda bir düzenli kontroller sağlanarak gerektiği takdirde beyazlatma işleminin 6 ayda veya yılda bir tekrarlanması, beyazlığın daha kalıcı olması açısından değerlendirilebilir.', visible:false}
         ]" />
+        <BeforeAfter/>
         <ReachUs />
     </Animatable>
 </template>

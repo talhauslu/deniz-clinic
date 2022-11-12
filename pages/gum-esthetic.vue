@@ -7,9 +7,9 @@ import Introduction from '../components/sections/services/Introduction.vue';
 import ReachUs from '../components/ReachUs.vue';
 import CheckMarks from '../components/sections/services/CheckMarks.vue';
 import QandA from '../components/sections/services/QandA.vue';
-
+import BeforeAfter from '../components/BeforeAfter.vue';
 export default {
-    components: { Animatable, Landing, Description, ShortDescription, Introduction, ReachUs, CheckMarks, QandA }
+    components: { Animatable, Landing, Description, ShortDescription, Introduction, ReachUs, CheckMarks, QandA, BeforeAfter }
 }
 </script>
 
@@ -28,6 +28,7 @@ export default {
             { q: 'Diş eti estetiği sırasında acı hissedecek miyim?', a: 'Lokal anestezi kullanıldığı için hastalar operasyon sırasında neredeyse hiçbir şey hissetmezler. Diş eti cerrahları diş eti çizgisinin düzgün olmasını ve dişlerin yeterince büyük olmasını göz önünde tutarak fazla dişeti dokusunu alırlar. İşlem sırasında ufak kanamalar olabilir ve işlemden sonra soğuk ve sıcak hassasiyeti yaygındır.', visible: false },
             { q: 'Operasyon sonrası nelere dikkat etmeliyim?', a: 'Operasyondan sonra diş etlerinizin sağlıklı hale dönmesi için biraz zaman gerekir. Bu yüzden ilk birkaç gün evde geçirilmesi tavsiye edilir. Aşırı baharatlı ve sert gıdalardan kaçınılması gerekmektedir. Dişçinizin size tarif ettiği şekilde dişler fırçalanmalı ve herhangi bir fazla kanamada veya şişme durumunda haber verilmelidir.', visible: false },
         ]" />
+        <BeforeAfter/>
 
         <ReachUs />
     </Animatable>

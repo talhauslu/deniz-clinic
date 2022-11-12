@@ -8,8 +8,9 @@ import Description from '../components/sections/services/Description.vue';
 import ReachUsForm from '../components/ReachUsForm.vue';
 import ReachUs from '../components/ReachUs.vue';
 import QandA from '../components/sections/services/QandA.vue';
+import BeforeAfter from '../components/BeforeAfter.vue';
 export default {
-    components: { Landing, Animatable, Introduction, CheckMarks, ShortDescription, Description, ReachUs, QandA }
+    components: { Landing, Animatable, Introduction, CheckMarks, ShortDescription, Description, ReachUs, QandA,BeforeAfter }
 }
 </script>
 
@@ -29,7 +30,7 @@ export default {
                 {list:true, texts:['Öncelikle diş etlerinin seviyeleri eşitlenir.', 'Diş eksiklikleri için implant tedavileri ya da diğer tedaviler planlanır.', 'Rengi çok koyu dişlere diş beyazlatma tedavileri uygulanabilir.', 'Bazı diş arası boşluklarda bonding uygulaması dediğimiz estetik dolgular tercih edebilir.', 'Tüm bu seçeneklerin yeterli gelmediği durumlarda yaprak porselen dişlerle dişler restore edilir.']}
             ]"/>
         <ShortDescription content="Yapılan gülüş dizaynı sonucunda, dişler (Beyaz Estetik) ve diş etlerinde (Pembe Estetik) uygun olan değişikliklerin, hangi miktarda ve nasıl yapılması gerektiği saptanır ve bu planlama sonucu estetik diş hekimliği uygulamalarına geçilir." heading="Gülüş Tasarımı"/>
-
+        <BeforeAfter/>
         <ReachUs/>
     </Animatable>
 </template>

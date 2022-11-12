@@ -7,8 +7,9 @@ import ShortDescription from '../components/sections/services/ShortDescription.v
 import Description from '../components/sections/services/Description.vue';
 import ReachUs from '../components/ReachUs.vue';
 import QandA from '../components/sections/services/QandA.vue';
+import BeforeAfter from '../components/BeforeAfter.vue';
 export default {
-    components: { Landing, Animatable, Introduction, CheckMarks, ShortDescription, Description, ReachUs, QandA }
+    components: { Landing, Animatable, Introduction, CheckMarks, ShortDescription, Description, ReachUs, QandA, BeforeAfter }
 }
 </script>
 
@@ -37,6 +38,7 @@ export default {
             { q: 'Porselen lamina dişlerin ömrü ne kadardır?', a: 'Laminalar iyi ve doğru bir ağız bakımıyla yıllarca sorunsuz olarak kullanılabilirler. Bunu da sebebi diğer yapıştırma sistemlerden daha üstün özelliklere sahip porselenden imal edilmiş olmalarıdır. Lekelenme ve aşınmaya karşı dirençlidirler. Ömürlerini uzatmak için ağız bakımına dikkat etmek gerekir. ', visible: false },
             { q: 'Porselen laminalar renk değiştirir mi?', a: 'Laminate veneer dişlerin yüzeyleri porselen, cilalı ve pürüzsüz olduğu için kahve sigara lekesi tutmamaktadır.', visible: false }
         ]" />
+        <BeforeAfter/>
         <ReachUs />
     </Animatable>
 </template>
