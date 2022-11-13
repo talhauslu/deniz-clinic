@@ -52,25 +52,25 @@ export default {
         class="z-50 h-10vh shadow sticky top-0 flex flex-row sm:gap-4 md:gap-8 w-full justify-between sm:justify-center px-6 py-2 items-center bg-white font-semibold text-gray-700 text-lg ">
 
         <nav class="hidden sm:flex flex-row sm:gap-4 md:gap-8 flex-1 justify-end">
-            <NuxtLink to="/">ANA SAYFA</NuxtLink>
+            <NuxtLink :to="localePath($t('header').navigation.routes.main.url)">{{$t('header').navigation.routes.main.name}}</NuxtLink>
 
-            <Dropdown title="SERVİSLER">
+            <Dropdown :title="$t('header').navigation.routes.services.name">
 
-                <Element v-for="service in services" :to="service.url" :title="service.name" :key="service.url" />
+                <Element v-for="service in $t('header').navigation.services" :to="localePath(service.url)" :title="service.name" :key="service.url" />
 
             </Dropdown>
-            <NuxtLink to="/about">HAKKIMIZDA</NuxtLink>
+            <NuxtLink :to="localePath($t('header').navigation.routes.about.url)">{{$t('header').navigation.routes.about.name}}</NuxtLink>
         </nav>
 
-        <NuxtLink to="/" class="h-full py-1 block sm:hidden lg:block">
+        <NuxtLink :to="localePath($t('header').navigation.routes.main.url)" class="h-full py-1 block sm:hidden lg:block">
             <nuxt-img src="/logo-removebg-preview.png" class="object-contain h-full w-full" />
         </NuxtLink>
 
         <nav class="flex-1 hidden sm:flex flex-row sm:gap-4 md:gap-8 justify-start">
 
-            <NuxtLink to="/blog">BLOG</NuxtLink>
-            <NuxtLink to="/media">MEDYA</NuxtLink>
-            <NuxtLink to="/contact">İLETİŞİM</NuxtLink>
+            <NuxtLink :to="localePath($t('header').navigation.routes.blog.url)">{{$t('header').navigation.routes.blog.name}}</NuxtLink>
+            <NuxtLink :to="localePath($t('header').navigation.routes.before_after.url)">{{$t('header').navigation.routes.before_after.name}}</NuxtLink>
+            <NuxtLink :to="localePath($t('header').navigation.routes.contact.url)">{{$t('header').navigation.routes.contact.name}}</NuxtLink>
             <!-- <select>
                 <option value="tr">Turkish</option>
             </select> -->

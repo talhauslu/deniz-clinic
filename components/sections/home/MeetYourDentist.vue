@@ -4,15 +4,13 @@
             <nuxt-img class="w-3/4 object-contain rounded shadow-xl" src="/deniz1.png" />
         </div>
         <div class="animation-element fade-right w-full md:w-2/3 flex flex-col justify-center gap-8 text-center md:text-left">
-            <h1 class="text-4xl font-semibold text-gray-700">Uzm. Dr. Deniz Yılmaz ile tanış</h1>
+            <h1 class="text-4xl font-semibold text-gray-700">{{$t('index').meetyourdentist.heading}}</h1>
             <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam autem fugiat. Similique
-                debitis praesentium reiciendis quae. Neque earum atque et, distinctio soluta eius consequatur fugit?
-                Dignissimos expedita id dolorum.
+                {{$t('index').meetyourdentist.content}}
             </span>
             <NuxtLink to="/about"
                 class="inline self-start p-4 rounded-lg bg-gray-600 font-semibold border text-white hover:bg-opacity-50 transition-all shadow-md">
-                Daha fazlası
+                {{$t('basics').read_more}}
             </NuxtLink>
         </div>
     </section>

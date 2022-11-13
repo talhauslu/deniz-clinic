@@ -1,19 +1,169 @@
 {
-    "basics": {},
-    "index": {
-        "landing": {
-            "heading":"Sağlıkta dönüşümü keşfet",
-            "subheading":"İyi bir gülüş, iyi bir hayat"
+  "header": {
+    "navigation": {
+      "services": {
+        "esthetic_cosmetic": {
+          "name": "Aesthetic & Cosmetic Dentistry",
+          "url": "/esthetic-cosmetic"
         },
-        "shortdescription_veneers": {
-            
+        "smile_design": {
+          "name": "Smile Design",
+          "url": "/smile-design"
         },
-        "services": {},
-        "kindwords": {},
-        "meetyourdentist": {},
-        "ourclinic": {},
-        "reachus": {}
+        "porcelain_laminate": {
+          "name": "Porcelain Laminate & Laminate Veneers",
+          "url": "/porcelain-laminate"
+        },
+        "bleaching": {
+          "name": "Bleaching",
+          "url": "/bleaching"
+        },
+        "zirconium_crowns": {
+          "name": "Zirconium Porcelain Crowns",
+          "url": "/zirconium-crowns"
+        },
+        "inlay_onlay": {
+          "name": "Inlay Onlay",
+          "url": "/inlay-onlay"
+        },
+        "gum_esthetic": {
+          "name": "Gum Aesthetic",
+          "url": "/gum-esthetic"
+        }
+      },
+      "routes": {
+        "main": {
+          "name": "Main",
+          "url": "/"
+        },
+        "services": {
+          "name": "Services",
+          "url": "/"
+        },
+        "about": {
+          "name": "About",
+          "url": "/about"
+        },
+        "blog": {
+          "name": "Blog",
+          "url": "/blog"
+        },
+        "before_after": {
+          "name": "Before & After",
+          "url": "/before-after"
+        },
+        "contact": {
+          "name": "Contact",
+          "url": "/contact"
+        }
+      }
+    }
+  },
+  "basics": {
+    "book_online": "Book Online",
+    "read_more": "Read more"
+  },
+  "index": {
+    "landing": {
+      "heading": "Discover the evolution in dentistry",
+      "subheading": "A good smile, a good life"
     },
-    "about": {},
-    "services": {}
+    "shortdescription_veneers": {
+      "heading": "Porcelain Laminate",
+      "more": "More",
+      "typewriter_keys": [
+        "white",
+        "natural"
+      ],
+      "content": "Veneers hakkında teknik olmayan kısa bir açıklama. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quos asperiores nemo dolore. Saepe iure sit minus optio omnis nihil quas ipsam, repellendus laudantium quod. Veritatis dolorem officiis neque nihil!"
+    },
+    "services": {
+      "heading": "Discover our services",
+      "services": [
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "AESTHETIC & COSMETIC DENTISTRY",
+          "link": "/esthetic-cosmetic"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "SMILE DESIGN",
+          "link": "/smile-design"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "PORCELAIN LAMINATE & LAMİNATE VENEERS",
+          "link": "/porcelain-laminate"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "INLAY ONLAY",
+          "link": "/inlay-onlay"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "GUM AESTHETIC",
+          "link": "/gum-esthetic"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "BLEACHING",
+          "link": "/bleaching"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "ZIRCONIUM PORCEALIN CROWNS",
+          "link": "/zirconium-crowns"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "SERVİS1",
+          "link": ""
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "SERVİS2",
+          "link": ""
+        }
+      ]
+    },
+    "kindwords": {
+      "heading": "We care about your feedbacks.",
+      "reviews": [
+        {
+          "content": "As a result of my long researches, I am happy to have met my teacher, Deniz Yılmaz. I definitely owe it to him that I overcame my dentist phobia from my childhood. I felt comfortable with his smiling face and warm-blooded demeanor, thank you Deniz, teacher 🙏☺️",
+          "author": "Sedat"
+        },
+        {
+          "content": "He is a very beautiful person not only with the quality of his work but also with his smiling.",
+          "author": "Emrecan"
+        },
+        {
+          "content": "I can say she is the best dentist is Istanbul. I recommend her to everyone.",
+          "author": "Aslı"
+        },
+        {
+          "content": "Thanks to Dr. Deniz, my teeth became like pearls. His clinic is so beautiful and every detail is peaceful. You complete your treatment in a safe environment in an incredibly comfortable way. I recommend it to anyone who has problems with their teeth.",
+          "author": "Ebrar"
+        }
+      ],
+      "see_all_comments": "See all comments."
+    },
+    "meetyourdentist": {
+      "heading": "Meet your specialist, Deniz Yılmaz",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam autem fugiat. Similique debitis praesentium reiciendis quae. Neque earum atque et, distinctio soluta eius consequatur fugit? Dignissimos expedita id dolorum."
+    },
+    "ourclinic": {
+      "heading": "OUR CLINIC"
+    }
+  },
+  "about": {},
+  "services": {},
+  "reach_us": {
+    "heading": "Send a message",
+    "name": "Name",
+    "email": "E-mail",
+    "message": "Message",
+    "send": "Send"
+  }
 }

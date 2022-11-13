@@ -1,19 +1,173 @@
 {
-    "basics": {},
-    "index": {
-        "landing": {
-            "heading":"Sağlıkta dönüşümü keşfet",
-            "subheading":"İyi bir gülüş, iyi bir hayat"
+  "header": {
+    "navigation": {
+      "services": {
+        "esthetic_cosmetic": {
+          "name": "Estetik & Kozmetik Diş Hekimliği",
+          "url": "/esthetic-cosmetic"
         },
-        "shortdescription_veneers": {
-            
+        "smile_design": {
+          "name": "Gülüş Tasarımı",
+          "url": "/smile-design"
         },
-        "services": {},
-        "kindwords": {},
-        "meetyourdentist": {},
-        "ourclinic": {},
-        "reachus": {}
+        "porcelain_laminate": {
+          "name": "Porselen Lamina",
+          "url": "/porcelain-laminate"
+        },
+        "bleaching": {
+          "name": "Diş Beyazlatma",
+          "url": "/tooth-whitening"
+        },
+        "zirconium_crowns": {
+          "name": "Zirkonyum Porselen Kaplama",
+          "url": "/zirconium-crowns"
+        },
+        "inlay_onlay": {
+          "name": "İnlay & Onlay",
+          "url": "/inlay-onlay"
+        },
+        "gum_esthetic": {
+          "name": "Diş Eti Estetiği",
+          "url": "/gum-esthetic"
+        }
+      },
+      "routes": {
+        "main": {
+          "name": "Ana Sayfa",
+          "url": "/"
+        },
+        "services": {
+          "name": "Servislerimiz",
+          "url": "/"
+        },
+        "about": {
+          "name": "Hakkımızda",
+          "url": "/about"
+        },
+        "blog": {
+          "name": "Blog",
+          "url": "/blog"
+        },
+        "before_after": {
+          "name": "Önce & Sonra",
+          "url": "/before-after"
+        },
+        "contact": {
+          "name": "İletişim",
+          "url": "/contact"
+        }
+      }
+    }
+  },
+  "basics": {
+    "book_online": "Randevu Al",
+    "read_more": "Daha fazlası"
+  },
+  "index": {
+    "landing": {
+      "heading": "Sağlıkta dönüşümü keşfet",
+      "subheading": "İyi bir gülüş, iyi bir hayat"
     },
-    "about": {},
-    "services": {}
+    "shortdescription_veneers": {
+      "heading": "Porselen Lamina",
+      "more": "Daha",
+      "typewriter_keys": [
+        "beyaz",
+        "doğal"
+      ],
+      "content": "Veneers hakkında teknik olmayan kısa bir açıklama. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quos asperiores nemo dolore. Saepe iure sit minus optio omnis nihil quas ipsam, repellendus laudantium quod. Veritatis dolorem officiis neque nihil!"
+    },
+    "services": {
+      "heading": "Servislerimizi Keşfedin",
+      "services": [
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "ESTETİK & KOZMETİK DİŞ HEKİMLİĞİ",
+          "link": "/esthetic-cosmetic"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "GÜLÜŞ TASARIMI",
+          "link": "/smile-design"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "PORSELEN LAMİNA & LAMİNATE VENEER",
+          "link": "/porcelain-laminate"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "PORSELEN & INLAY ONLAY",
+          "link": "/inlay-onlay"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "DİŞ ETİ ESTETİĞİ",
+          "link": "/gum-esthetic"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "DİŞ BEYAZLATMA",
+          "link": "/bleaching"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "ZİRKONYUM PORSELEN KAPLAMA",
+          "link": "/zirconium-crowns"
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "SERVİS1",
+          "link": ""
+        },
+        {
+          "icon": "fa-solid fa-tooth",
+          "header": "SERVİS2",
+          "link": ""
+        }
+      ]
+    },
+    "kindwords": {
+      "heading": "Geri dönüşlerinizi önemsiyoruz.",
+      "reviews": [
+        {
+          "content": "Uzun araştırmalarım neticesinde deniz Yılmaz hocamla tanışmış olmaktan mutluluk duyuyorum küçüklüğümden kalma dişçi fobimi yenmemi kesinlikle kendisine borçluyum Güler yüzü sıcak kanlı tavırlarıyla kendimi evimdeymişcesine rahat hissettim teşekkürler deniz hocam 🙏☺️",
+          "en": "As a result of my long researches, I am happy to have met my teacher, Deniz Yılmaz. I definitely owe it to him that I overcame my dentist phobia from my childhood. I felt comfortable with his smiling face and warm-blooded demeanor, thank you Deniz, teacher 🙏☺️",
+          "author": "Sedat"
+        },
+        {
+          "content": "Sadece yaptığı işin kalitesi ile değil aynı zamanda güler yüzü ve muhabbeti ile çok güzel bir insan 👏👏",
+          "en": "He is a very beautiful person not only with the quality of his work but also with his smiling.",
+          "author": "Emrecan"
+        },
+        {
+          "content": "İstanbul’daki en iyi diş hekimi diyebilirim 👌🏼Herkese tavsiye💞",
+          "en": "I can say she is the best dentist is Istanbul. I recommend her to everyone.",
+          "author": "Aslı"
+        },
+        {
+          "content": "Deniz hocam sayesinde dişlerim inci gibi oldu.Muayehanesi o kadar güzel ki her detayı huzur verici.İnanılmaz rahat bir şekilde tedavinizi güvenli bir ortamda tamamlıyorsunuz.Dişleri ile problemi olan herkese gönül rahatlığıyla tavsiye ediyorum.",
+          "en": "Thanks to Dr. Deniz, my teeth became like pearls. His clinic is so beautiful and every detail is peaceful. You complete your treatment in a safe environment in an incredibly comfortable way. I recommend it to anyone who has problems with their teeth.",
+          "author": "Ebrar"
+        }
+      ],
+      "see_all_comments": "Tüm yorumları gör."
+    },
+    "meetyourdentist": {
+      "heading": "Uzm. Dr. Deniz Yılmaz ile tanış",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam autem fugiat. Similique debitis praesentium reiciendis quae. Neque earum atque et, distinctio soluta eius consequatur fugit? Dignissimos expedita id dolorum."
+    },
+    "ourclinic": {
+      "heading": "KLİNİĞİMİZ"
+    }
+  },
+  "about": {},
+  "services": {},
+  "reachus": {
+    "heading": "Send a message",
+    "name": "İsim",
+    "email": "E-posta",
+    "message": "Mesaj",
+    "send": "Send"
+  }
 }
